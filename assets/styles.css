@@ -74,3 +74,6 @@ main>.back-to-top{display:flex;align-items:center;justify-content:center;gap:12p
 
 /* Keep the about section close to selected work. */
 .about{margin-top:50px}@media(max-width:760px){.about{margin-top:45px}}
+
+/* The last work row is the separator; About begins immediately below it. */
+.about{margin-top:0;border-top:0;padding-top:28px}@media(max-width:760px){.about{margin-top:0}}
