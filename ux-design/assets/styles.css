@@ -52,3 +52,7 @@
 
 .home-hero{min-height:560px;padding-top:65px;padding-bottom:40px}
 @media(max-width:760px){.home-hero{min-height:540px;padding-top:60px}}
+
+/* Open with the work itself. */
+.home-hero{min-height:390px;padding:45px 36px 28px}.home-hero h1{font-size:clamp(62px,6.4vw,96px)}.hero-grid{gap:35px}.featured-project{padding-top:32px}.project-visual{min-height:455px;padding:32px 36px}
+@media(max-width:760px){.home-hero{min-height:455px;padding:45px 20px 28px}.home-hero h1{font-size:clamp(48px,12vw,62px)}.featured-project{padding-top:30px}.project-visual{min-height:315px;padding:25px}}
