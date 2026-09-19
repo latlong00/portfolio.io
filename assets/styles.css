@@ -94,3 +94,6 @@ main>.back-to-top{justify-content:flex-end;gap:10px;margin:0 34px 26px;padding:2
 /* Work remains a link; hover, focus, or the chevron reveals case studies. */
 .work-menu{display:flex;align-items:center;position:relative}.work-link{display:block}.work-toggle{border:0;background:transparent;color:inherit;font:inherit;font-size:18px;line-height:1;cursor:pointer;padding:4px 0 4px 6px}.work-toggle:hover{opacity:.55}.work-toggle:focus-visible,.work-link:focus-visible{outline:2px solid var(--coral);outline-offset:3px}.work-dropdown{display:none;top:100%;right:-18px}.work-menu:hover .work-dropdown,.work-menu:focus-within .work-dropdown,.work-menu.is-open .work-dropdown{display:grid}.work-dropdown a{white-space:nowrap}
 @media(max-width:760px){.work-menu{display:grid;grid-template-columns:1fr auto}.work-toggle{padding:4px 10px}.work-dropdown{grid-column:1/-1;display:none}.work-menu:hover .work-dropdown{display:none}.work-menu.is-open .work-dropdown,.work-menu:focus-within .work-dropdown{display:grid}}
+
+/* Keep the desktop chevron out of view until Work is engaged. */
+@media(hover:hover) and (min-width:761px){.work-toggle{opacity:0;transition:opacity .18s}.work-menu:hover .work-toggle,.work-menu:focus-within .work-toggle,.work-menu.is-open .work-toggle{opacity:1}}
