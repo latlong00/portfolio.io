@@ -73,3 +73,8 @@
 .selected-work>.featured-project:last-of-type{padding-bottom:52px;border-bottom:0}
 .selected-work+.about{margin-top:0;padding-top:46px}
 @media(max-width:760px){.selected-work>.featured-project:last-of-type{padding-bottom:36px}.selected-work+.about{padding-top:36px}}
+
+/* Give the editorial hero title room between its label and lines. */
+.home-hero>.eyebrow{margin:0 0 36px}
+.home-hero h1{line-height:1.04;letter-spacing:-.045em}
+@media(max-width:760px){.home-hero>.eyebrow{margin-bottom:28px}.home-hero h1{line-height:1.05}}
