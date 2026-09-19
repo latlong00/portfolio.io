@@ -116,8 +116,4 @@
 /* Distinguish original A/B evidence from the newly proposed Forum design. */
 .historical-comparison{margin:30px 0 18px;border-top:1px solid var(--line);border-bottom:1px solid var(--line)}.historical-comparison summary{cursor:pointer;list-style:none;display:flex;justify-content:space-between;gap:20px;align-items:center;padding:19px 4px;font-size:13px;font-weight:600;color:var(--ink)}.historical-comparison summary::-webkit-details-marker{display:none}.historical-comparison summary span{font-size:20px;color:var(--coral-dark)}.historical-comparison[open] summary span{transform:rotate(90deg)}.historical-comparison .ab-visual{margin:0 0 24px}.forum-current-link{display:inline-block;border-bottom:1px solid currentColor;padding-bottom:4px;margin:4px 0 30px;color:var(--coral-dark);font-size:13px;font-weight:600}
 
-/* Direct path from the unchanged Quizlet hero to the updated Forum phone design. */
-.quizlet-jump{display:inline-flex;align-items:center;justify-content:space-between;gap:36px;margin:4px 0 28px;padding:12px 0;border-bottom:1px solid currentColor;font-size:13px;color:var(--coral-dark);font-weight:600}.quizlet-jump:hover{opacity:.65}#forums-redesign{scroll-margin-top:24px}
 
-/* Show the phone large enough to read its navigation and discussion content. */
-@media(min-width:801px){.forums-gif img{height:min(810px,80vw)}}
