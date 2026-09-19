@@ -83,3 +83,7 @@
 .iron-design-hero h1{font-size:clamp(78px,10vw,140px);line-height:.92;margin-bottom:32px}
 .iron-design-hero .case-dek{font-size:clamp(28px,3.2vw,43px);line-height:1.14;max-width:1030px}
 @media(max-width:760px){.iron-design-hero h1{font-size:clamp(54px,13vw,90px)}.iron-design-hero .case-dek{font-size:clamp(25px,6vw,34px);max-width:100%}}
+
+/* Compact case-study closing navigation. */
+.case-study>.back-to-top{justify-content:flex-end;gap:10px;margin:0 36px 26px;padding:22px 0 0}
+@media(max-width:760px){.case-study>.back-to-top{margin:0 20px 22px;padding-top:18px}}
