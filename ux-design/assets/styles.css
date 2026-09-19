@@ -70,3 +70,7 @@
 
 /* Remove excess space after the last featured project. */
 .selected-work{padding-bottom:45px}.about{margin-top:0}@media(max-width:760px){.selected-work{padding-bottom:35px}.about{margin-top:0}}
+
+/* Remove the final project and section padding before About. */
+.selected-work{padding-bottom:0}.selected-work>.featured-project:last-of-type{padding-bottom:0;border-bottom:0}.about{margin-top:0}
+@media(max-width:760px){.selected-work{padding-bottom:0}.selected-work>.featured-project:last-of-type{padding-bottom:0}}
