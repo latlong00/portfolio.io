@@ -78,3 +78,8 @@
 .home-hero>.eyebrow{margin:0 0 56px}
 .home-hero h1{font-size:clamp(58px,5.9vw,104px);line-height:1.16;letter-spacing:-.045em}
 @media(max-width:760px){.home-hero>.eyebrow{margin-bottom:34px}.home-hero h1{font-size:clamp(48px,9vw,70px);line-height:1.15}}
+
+/* Center the Iron Mountain introduction within the full case-study width. */
+.iron-design-hero>h1,.iron-design-hero>.case-dek{text-align:center;margin-left:auto;margin-right:auto}
+.iron-design-hero>.case-dek{max-width:1080px;line-height:1.12}
+@media(max-width:760px){.iron-design-hero>.case-dek{max-width:100%}}
