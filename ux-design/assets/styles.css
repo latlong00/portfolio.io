@@ -68,8 +68,8 @@
 
 .dashboard-proof img{width:100%;max-width:none;object-fit:cover;object-position:top}
 
-/* Keep the final case study directly adjacent to the About section. */
+/* Give the final project and About heading deliberate breathing room. */
 .selected-work{padding-bottom:0}
-.selected-work>.featured-project:last-of-type{padding-bottom:0;border-bottom:0}
-.selected-work+.about{margin-top:0}
-@media(max-width:760px){.selected-work{padding-bottom:0}.selected-work>.featured-project:last-of-type{padding-bottom:0}}
+.selected-work>.featured-project:last-of-type{padding-bottom:52px;border-bottom:0}
+.selected-work+.about{margin-top:0;padding-top:46px}
+@media(max-width:760px){.selected-work>.featured-project:last-of-type{padding-bottom:36px}.selected-work+.about{padding-top:36px}}
