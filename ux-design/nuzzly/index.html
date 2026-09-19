@@ -5,7 +5,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <meta name="description" content="Nuzzly UX design case study by Laticia Long: marketplace discovery, messaging, booking states, dashboards, and safety.">
   <title>Nuzzly UX Design Case Study — Laticia Long</title>
-  <link rel="stylesheet" href="../assets/styles.css?v=14">
+  <link rel="stylesheet" href="../assets/styles.css?v=15">
   <script defer src="../assets/site.js"></script>
 </head>
 <body id="top">
@@ -91,8 +91,16 @@
     <section class="case-section">
       <header class="section-heading"><span>03</span><div><p>DASHBOARD + LISTING MANAGEMENT</p><h2>Show what users can do now—and what becomes available later.</h2></div></header>
       <div class="section-copy"><p>The dashboard mixed applications, active sits, support, and messaging without explaining when private contact details were shared. Some actions appeared twice, while important state boundaries were invisible.</p><p>I treated the dashboard as an operational workspace: one primary action per intent, clearer tabs, visible confirmation status, and transparent rules for contact sharing and emergency support.</p></div>
-      <figure class="wide-evidence"><div class="crop-banner"><img src="https://laticia-nuzzly-case-study.yanhong-long.chatgpt.site/assets/dashboard-before.png" alt="Nuzzly dashboard showing booking status, emergency support, contact-sharing details, and messaging actions"></div><figcaption><b>Product-state review</b><span>The later interface added an Emergency &amp; support area, but duplicated messaging and exposed backend terminology.</span></figcaption></figure>
-      <div class="dashboard-principles"><div><span>ONE INTENT</span><strong>One messaging entry point</strong><p>Remove duplicate “Message Owner” and “Message” actions.</p></div><div><span>VISIBLE RULE</span><strong>Contact details after confirmation</strong><p>Explain the safety boundary without implementation language.</p></div><div><span>CONSISTENT STATE</span><strong>Cards and timelines agree</strong><p>Use the same authoritative status everywhere.</p></div></div>
+      <div class="dashboard-comparison">
+        <figure class="dashboard-proof"><div class="crop-banner"><img src="https://laticia-nuzzly-case-study.yanhong-long.chatgpt.site/assets/dashboard-before.png" alt="Later Nuzzly dashboard with Emergency and support panel, technical contact-sharing text, and duplicate messaging actions"></div><figcaption><b>Later product state</b><span>The support panel made the sharing boundary visible, while its copy still exposed backend language and two actions led to messaging.</span></figcaption></figure>
+        <div class="dashboard-evolution">
+          <p class="eyebrow coral">COPY EVOLUTION</p>
+          <div class="dashboard-step"><span>01 / BEFORE</span><h3>No contact-sharing explanation</h3><p>Users could not tell when the owner’s private contact details would become available.</p></div>
+          <div class="dashboard-step"><span>02 / LATER PRODUCT STATE</span><h3>“Owner private contact details are hidden until the backend shares confirmed-sit support fields.”</h3><p>A rule appeared, but its wording described the implementation instead of what users needed to know.</p></div>
+          <div class="dashboard-step recommended"><span>03 / MY RECOMMENDATION</span><h3>“Contact details will be shared after confirmation.”</h3><p>Keep the confirmation rule; say it in plain language.</p></div>
+        </div>
+      </div>
+      <div class="dashboard-action-compare" aria-label="Messaging action before and recommendation"><div><span>BEFORE · DUPLICATE ACTION</span><s>Message Owner + Message</s></div><div><span>RECOMMENDATION · ONE INTENT</span><strong>One primary messaging action</strong><p>Make the route to a conversation unambiguous on the booking card.</p></div></div>
       <div class="management-grid"><article><span>OWNER ACTION</span><h3>Add trip</h3><p>Surface the next frequent owner task alongside Create listing and Find a sitter.</p></article><article><span>EMPTY-STATE ACCURACY</span><h3>No active sits right now</h3><p>Replace “No active sits yet” when a user may already have completed stays.</p></article><article><span>ATTENTION HIERARCHY</span><h3>Show workload</h3><p>Bring applications, unread messages, and pending reviews out of hidden tabs.</p></article><article><span>INTERACTION CONSISTENCY</span><h3>One message action</h3><p>Keep status-sensitive actions attached to the correct listing or booking.</p></article></div>
       <div class="support-story"><div><p class="eyebrow coral">SUPPORT HANDOFF</p><h3>Complete the user’s request to reach a person.</h3><p>When a user wrote “ok connect me,” the system did not acknowledge or initiate the handoff. The revised pattern confirms the destination, explains that the conversation summary transfers, and provides one next action.</p><blockquote>I can connect you with Nuzzly Support. Your conversation summary will be included so you won’t need to repeat everything.</blockquote><strong>Message Nuzzly Support</strong></div><figure><span>BEFORE · INTENT NOT COMPLETED</span><img src="https://laticia-nuzzly-case-study.yanhong-long.chatgpt.site/assets/support-handoff.png" alt="Nuzzly Support chat where a request for a human handoff is not completed"><figcaption>The user still has to discover and select a separate support control.</figcaption></figure></div>
     </section>
