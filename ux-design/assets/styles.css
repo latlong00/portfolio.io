@@ -108,3 +108,7 @@
 
 /* Keep the desktop chevron out of view until Work is engaged. */
 @media(hover:hover) and (min-width:801px){.work-toggle{opacity:0;transition:opacity .18s}.work-menu:hover .work-toggle,.work-menu:focus-within .work-toggle,.work-menu.is-open .work-toggle{opacity:1}}
+
+/* Let the new portrait Forums animation fill its own frame cleanly. */
+.forums-gif{display:flex;flex-direction:column;justify-content:center;background:#e5e9fb}.forums-gif img{display:block;width:auto;height:min(690px,70vw);max-width:100%;max-height:none;margin:auto;background:transparent;object-fit:contain}.forums-gif figcaption{align-self:stretch}
+@media(max-width:800px){.forums-gif img{height:auto;width:min(100%,480px)}}
