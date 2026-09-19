@@ -17,3 +17,29 @@
 @media(max-width:800px){.quizlet-hero-visual{padding:25px}.reason-list{grid-template-columns:1fr}.solution-brief{padding:35px}.feature-story{grid-template-columns:1fr;gap:30px;padding:55px 0}.feature-story.reverse>div,.feature-story.reverse>figure{order:initial}.test-heading,.finding{grid-template-columns:1fr;gap:18px}.finding>strong{grid-row:auto}.gif-frame,.ab-visual{padding:15px}}
 .takeaway-list{margin:60px 0 0 230px;border-top:1px solid var(--line)}.takeaway-list article{display:grid;grid-template-columns:80px 1fr;gap:30px;padding:38px 0;border-bottom:1px solid var(--line)}.takeaway-list article>span{font:400 20px "Newsreader",serif;color:var(--coral-dark)}.takeaway-list h3{font:400 32px/1.1 "Newsreader",serif;margin:0 0 15px}.takeaway-list p{max-width:720px;line-height:1.65;color:var(--muted)}.iron-reflection{background:#e3e9e3}.iron-reflection strong{color:var(--coral-dark)}
 @media(max-width:800px){.takeaway-list{margin:40px 0 0}.takeaway-list article{grid-template-columns:45px 1fr;gap:15px}}
+
+/* Project-specific UX design banners */
+.hero-showcase-home{min-height:680px;background:#eb9c89;display:grid;grid-template-columns:minmax(0,1fr) 22%;gap:30px;align-items:center;padding:55px 8%;position:relative}
+.home-browser{border-radius:10px;background:white;box-shadow:0 24px 55px #3d221c35;overflow:hidden;min-width:0}
+.home-browser-bar{height:30px;background:#f1ebe6;display:flex;gap:6px;align-items:center;padding:0 12px}
+.home-browser-bar span{height:7px;width:7px;border-radius:50%;background:#bdb5af}
+.home-browser-bar b{margin:auto;color:#6b6862;font:500 10px "DM Sans",sans-serif}
+.home-browser img{width:100%;height:auto;object-fit:contain}
+.hero-showcase-home .home-phone{border:7px solid #191919;border-radius:25px;overflow:hidden;box-shadow:0 25px 45px #421f1f50;max-height:530px;background:white}
+.home-phone img{width:100%;height:100%;max-height:520px;object-fit:cover;object-position:top}
+.showcase-caption{position:absolute;bottom:13px;left:8%;margin:0;font-size:10px;letter-spacing:.16em;color:#48261f}
+.iron-hero-workflow{grid-template-columns:.65fr 1.4fr;align-items:stretch;background:#273932}
+.iron-hero-workflow .im-logo-card small{color:#667069;font-size:10px;letter-spacing:.13em}
+.workflow-board{display:grid;grid-template-columns:repeat(3,1fr);gap:1px;background:#aebcb0;border:1px solid #aebcb0}
+.workflow-board>div{background:#e7ece5;display:flex;flex-direction:column;gap:15px;min-width:0;padding:35px 22px}
+.workflow-board span{font-size:10px;letter-spacing:.12em;color:#a44233}
+.workflow-board strong{font:400 clamp(24px,2.8vw,37px)/1 "Newsreader",serif}
+.workflow-board small{margin-top:auto;color:#5f6b63;line-height:1.5}
+.quizlet-showcase{display:grid;grid-template-columns:minmax(0,1fr) minmax(190px,30%);gap:26px;align-items:center;background:#3446dd;padding:45px}
+.quizlet-main-frame{min-width:0}
+.quizlet-main-frame img{width:100%;filter:drop-shadow(0 18px 30px #09187550)}
+.quizlet-motion-frame{background:#e7eafb;padding:13px;box-shadow:0 20px 40px #07127a50}
+.quizlet-motion-frame img{height:365px;width:100%;object-fit:contain;background:white}
+.quizlet-motion-frame span{display:block;color:#293aad;padding:10px 0 0;font-size:10px;letter-spacing:.12em}
+@media(max-width:800px){.hero-showcase-home{min-height:0;padding:28px;grid-template-columns:1fr 25%;gap:12px}.showcase-caption{display:none}.iron-hero-workflow{grid-template-columns:1fr}.workflow-board{min-height:260px}.quizlet-showcase{padding:25px}}
+@media(max-width:550px){.hero-showcase-home{display:block}.home-phone{display:none}.workflow-board{grid-template-columns:1fr}.workflow-board>div{min-height:135px}.quizlet-showcase{grid-template-columns:1fr}.quizlet-motion-frame{max-width:260px;margin:auto}.quizlet-motion-frame img{height:300px}}
