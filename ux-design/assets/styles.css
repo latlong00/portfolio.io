@@ -118,3 +118,6 @@
 
 /* Direct path from the unchanged Quizlet hero to the updated Forum phone design. */
 .quizlet-jump{display:inline-flex;align-items:center;justify-content:space-between;gap:36px;margin:4px 0 28px;padding:12px 0;border-bottom:1px solid currentColor;font-size:13px;color:var(--coral-dark);font-weight:600}.quizlet-jump:hover{opacity:.65}#forums-redesign{scroll-margin-top:24px}
+
+/* Show the phone large enough to read its navigation and discussion content. */
+@media(min-width:801px){.forums-gif img{height:min(810px,80vw)}}
