@@ -65,3 +65,7 @@
 .preview-reframe{background:#e9c9b5}.preview-editorial{display:flex;flex-direction:column;gap:12px;background:#faf5eb;width:75%;height:114px;padding:10px 13px;transform:rotate(4deg);box-shadow:0 5px 18px #5c332522}.preview-editorial em{font:italic 12px "Newsreader",serif}.preview-editorial b{font:400 19px/1 "Newsreader",serif}.preview-editorial i{font:8px "DM Sans",sans-serif;color:#856b60}
 .case-hero{padding-top:38px;padding-bottom:42px}.case-kicker{margin:34px 0 0}.case-hero h1{margin:38px 0 18px}.meta{margin-top:35px}.writing-banner{margin-top:32px}
 @media(max-width:760px){.hero{min-height:520px;padding-top:60px}.project{grid-template-columns:25px 92px minmax(0,1fr) 20px;gap:10px;padding:18px 0}.project-preview{height:96px}.preview-doc{height:85px;padding:9px}.preview-doc i{font-size:6px}.preview-editorial{height:82px;padding:7px;gap:5px}.preview-editorial b{font-size:14px}.case-hero{padding-top:28px;padding-bottom:35px}.case-hero h1{margin:32px 0 15px}}
+
+/* Editorial index: full-width typography without miniature image previews. */
+.project{grid-template-columns:70px minmax(0,1fr) 240px 30px;gap:18px;padding:32px 0}
+@media(max-width:760px){.project{grid-template-columns:40px minmax(0,1fr) 24px;gap:18px;padding:25px 0}}
