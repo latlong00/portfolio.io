@@ -260,3 +260,24 @@ footer{align-items:center;gap:20px}.footer-contact{display:flex;align-items:cent
 .nuzzly-contribution li{position:relative;padding:11px 0 11px 23px;border-top:1px solid var(--line);font-size:15px;line-height:1.45}
 .nuzzly-contribution li:before{content:"✓";position:absolute;left:0;color:#2a8b79}
 @media(max-width:700px){.nuzzly-hero-summary{font-size:16px}.nuzzly-contribution{padding:20px}.nuzzly-contribution li{font-size:14px}}
+
+/* Nuzzly: compact the introduction without shrinking the product proof. */
+.case-study:has(.nuzzly-story-nav) .case-hero{padding:42px 36px 58px}
+.case-study:has(.nuzzly-story-nav) .case-hero>.eyebrow{margin-top:38px}
+.case-study:has(.nuzzly-story-nav) .case-hero h1{margin:42px 0 21px;font-size:clamp(76px,10vw,138px)}
+.case-study:has(.nuzzly-story-nav) .case-dek{font-size:clamp(28px,3.6vw,48px);max-width:900px;margin:0}
+.case-study:has(.nuzzly-story-nav) .nuzzly-hero-summary{margin:16px 0 18px}
+.case-study:has(.nuzzly-story-nav) .nuzzly-story-nav{margin:15px 0 22px}
+.case-study:has(.nuzzly-story-nav) .case-meta{margin:28px 0 30px}
+.case-study:has(.nuzzly-story-nav) .nuzzly-single-showcase{padding:28px 6% 43px}
+.case-study:has(.nuzzly-story-nav) .nuzzly-single-showcase .home-browser{max-width:880px}
+.case-study:has(.nuzzly-story-nav) .case-overview{padding-top:65px;padding-bottom:65px}
+.case-study:has(.nuzzly-story-nav) .nuzzly-overview h2{font-size:clamp(40px,4.5vw,64px);margin-bottom:24px}
+@media(max-width:700px){
+.case-study:has(.nuzzly-story-nav) .case-hero{padding:28px 20px 42px}
+.case-study:has(.nuzzly-story-nav) .case-hero>.eyebrow{margin-top:32px}
+.case-study:has(.nuzzly-story-nav) .case-hero h1{margin:35px 0 20px}
+.case-study:has(.nuzzly-story-nav) .case-meta{margin:25px 0}
+.case-study:has(.nuzzly-story-nav) .nuzzly-single-showcase{padding:18px 16px 38px}
+.case-study:has(.nuzzly-story-nav) .case-overview{padding-top:52px;padding-bottom:52px}
+}
