@@ -5,7 +5,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <meta name="description" content="Nuzzly UX design case study by Laticia Long: marketplace discovery, messaging, booking states, dashboards, and safety.">
   <title>Nuzzly UX Design Case Study — Laticia Long</title>
-  <link rel="stylesheet" href="../assets/styles.css?v=47">
+  <link rel="stylesheet" href="../assets/styles.css?v=48">
   <script defer src="../assets/site.js?v=4"></script>
 </head>
 <body id="top">
@@ -47,15 +47,25 @@
       </div>
     </section>
 
-    <section class="case-section" id="discovery">
+    <section class="case-section discovery-story" id="discovery">
       <header class="section-heading"><span>01</span><div><p>EXPLORE + DISCOVERY</p><h2>Make the user’s goal visible before showing the inventory.</h2></div></header>
-      <div class="section-copy"><p><strong>Problem:</strong> Explore mixed search modes, location filters, and saved-item controls. People had to interpret the page before they could evaluate a listing.</p><p><strong>My redesign:</strong> I named the primary task <strong>Find a sit</strong>, grouped filters, separated save actions from view controls, and made result details easier to compare.</p></div>
-      <div class="comparison">
-        <figure><span>BEFORE · UNCLEAR MODE</span><img src="https://laticia-nuzzly-case-study.yanhong-long.chatgpt.site/assets/explore-before-coral-clean.png" alt="Original Nuzzly Explore interface"><figcaption>Competing controls and ambiguous modes made the starting point difficult to scan.</figcaption></figure>
-        <figure class="after"><span>AFTER · TASK-LED DISCOVERY</span><img src="https://laticia-nuzzly-case-study.yanhong-long.chatgpt.site/assets/explore-listings-after-coral.png" alt="Redesigned Nuzzly Explore interface"><figcaption>The redesign names the task, groups filters, and makes results easier to compare.</figcaption></figure>
-      </div>
+      <div class="section-copy"><p>Explore put sitter and listing searches alongside overlapping save and filter controls. I separated the tasks and made the current search state visible, so people could understand what they were seeing and change their criteria.</p></div>
       <div class="journey-block"><p class="eyebrow coral">OWNER LISTING JOURNEY</p><div class="journey"><span>Complete verification</span><i>→</i><span>Get membership</span><i>→</i><span>Create listing</span><i>→</i><span>Publish</span><i>→</i><span>Review applications</span></div></div>
-      <div class="nested-story filter-story"><div><p class="eyebrow coral">SITTER FILTERS</p><h3>Keep applied criteria visible and easy to revise.</h3><p>Filters appeared after search without a compact summary, removable selections, or a clear reset action. The redesign uses chips, <strong>Filters 2</strong>, <strong>Clear all</strong>, result count, and sorting so the current search state never disappears.</p></div><div class="comparison"><figure><span>BEFORE · UNCLEAR FILTER STATE</span><img src="https://laticia-nuzzly-case-study.yanhong-long.chatgpt.site/assets/explore-filters-coral-clean.png" alt="Original Nuzzly sitter results and filter controls"></figure><figure class="after"><span>AFTER · VISIBLE APPLIED STATE</span><img src="https://laticia-nuzzly-case-study.yanhong-long.chatgpt.site/assets/explore-filters-after-coral.png" alt="Redesigned Nuzzly sitter search with removable filters and result count"></figure></div></div>
+      <div class="discovery-findings" aria-label="Discovery issues"><p><strong>Mode ambiguity</strong><span>Sitters and Listings shared one surface.</span></p><p><strong>Competing save actions</strong><span>Search and saved-item controls competed for attention.</span></p><p><strong>Incomplete context</strong><span>Results and applied criteria were hard to scan.</span></p></div>
+      <div class="discovery-example">
+        <div class="discovery-example-heading"><span>01</span><div><h3>Listings view</h3><p>Clarify the search mode and give each control a distinct purpose.</p></div></div>
+        <div class="comparison discovery-visual-pair">
+          <figure><div class="discovery-card-label"><span>BEFORE · ORIGINAL LAYOUT</span><small>Competing controls</small></div><div class="discovery-phone"><img src="https://laticia-nuzzly-case-study.yanhong-long.chatgpt.site/assets/explore-before-coral-clean.png" alt="Original Nuzzly Explore screen with Sitters and Listings modes and overlapping save controls"></div><figcaption>Several controls sat beside overlapping save actions, and the result card showed incomplete image content.</figcaption></figure>
+          <figure class="after"><div class="discovery-card-label"><span>AFTER · REDESIGN</span><small>Clear mode and results</small></div><div class="discovery-phone"><img src="https://laticia-nuzzly-case-study.yanhong-long.chatgpt.site/assets/explore-listings-after-coral.png" alt="Redesigned Listings screen with Find a sit, labeled filters, result count, sorting, and complete listing cards"></div><figcaption><strong>Find a sit</strong> names the task. Labeled filters, one save action, a result count, sorting, and fuller cards support comparison.</figcaption></figure>
+        </div>
+      </div>
+      <div class="discovery-example">
+        <div class="discovery-example-heading"><span>02</span><div><h3>Sitter filters</h3><p>Keep applied criteria visible and easy to revise.</p></div></div>
+        <div class="comparison discovery-visual-pair">
+          <figure><div class="discovery-card-label"><span>BEFORE · ORIGINAL LAYOUT</span><small>Unclear filter state</small></div><div class="discovery-phone"><img src="https://laticia-nuzzly-case-study.yanhong-long.chatgpt.site/assets/explore-filters-coral-clean.png" alt="Original sitter results after filtering, without a compact summary of applied criteria"></div><figcaption>Filters appeared after search without a compact applied-state summary, removable selections, or a clear reset action.</figcaption></figure>
+          <figure class="after"><div class="discovery-card-label"><span>AFTER · REDESIGN</span><small>Visible applied state</small></div><div class="discovery-phone"><img src="https://laticia-nuzzly-case-study.yanhong-long.chatgpt.site/assets/explore-filters-after-coral.png" alt="Redesigned sitter results with removable filter chips, Filters 2, Clear all, result count, and sorting"></div><figcaption>Removable chips show the active criteria; <strong>Filters 2</strong>, <strong>Clear all</strong>, the result count, and sorting keep the search state understandable.</figcaption></figure>
+        </div>
+      </div>
     </section>
 
     <section class="case-section alt-section booking-story" id="booking">
