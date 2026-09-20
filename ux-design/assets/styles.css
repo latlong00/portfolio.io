@@ -248,3 +248,15 @@ footer{align-items:center;gap:20px}.footer-contact{display:flex;align-items:cent
 .discovery-visual-pair figcaption{padding:14px 3px 3px;line-height:1.5}
 @media(max-width:700px){.discovery-findings{grid-template-columns:1fr;gap:16px}.discovery-visual-pair{grid-template-columns:1fr}.discovery-phone{height:490px}}
 @media(max-width:420px){.discovery-phone{height:420px}.discovery-card-label small{font-size:10px}}
+
+/* Nuzzly opening: editorial framing with one concise contribution summary. */
+.case-study:has(.nuzzly-story-nav) .case-hero h1{margin-bottom:38px}
+.case-study:has(.nuzzly-story-nav) .case-dek{max-width:1000px}
+.nuzzly-hero-summary{max-width:720px;font-size:18px;line-height:1.6;color:var(--muted);margin:22px 0 26px}
+.nuzzly-overview>div>p{max-width:780px}
+.nuzzly-contribution{max-width:780px;margin-top:36px;border:1px solid var(--line);background:#fff;padding:27px 31px}
+.nuzzly-contribution .eyebrow{margin:0 0 15px;font-size:11px!important;line-height:1.2!important}
+.nuzzly-contribution ul{list-style:none;margin:0;padding:0}
+.nuzzly-contribution li{position:relative;padding:11px 0 11px 23px;border-top:1px solid var(--line);font-size:15px;line-height:1.45}
+.nuzzly-contribution li:before{content:"✓";position:absolute;left:0;color:#2a8b79}
+@media(max-width:700px){.nuzzly-hero-summary{font-size:16px}.nuzzly-contribution{padding:20px}.nuzzly-contribution li{font-size:14px}}
