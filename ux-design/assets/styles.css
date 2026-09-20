@@ -183,3 +183,20 @@ footer{align-items:center;gap:20px}.footer-contact{display:flex;align-items:cent
 .support-response p{background:#eef5f2;border-radius:12px;padding:15px;margin:0;line-height:1.55;font-size:14px}
 .support-action{background:var(--coral);color:white;text-align:center;font-size:13px;font-weight:700;padding:14px;margin-top:24px;border-radius:7px}
 @media(max-width:760px){.support-example{margin-top:65px;padding:45px 18px}.support-comparison{grid-template-columns:1fr}.support-before,.support-after{padding:16px}.support-image-wrap img{max-height:440px}}
+
+/* Nuzzly booking evidence: equal phone frames and readable comparison captions. */
+.booking-story{background:#1d2c29;color:#fff;border-top:0}
+.booking-story .section-heading>span,.booking-story .eyebrow{color:#ff8576}
+.booking-story .section-copy p,.booking-story .nested-story p{color:#d0d9d4}
+.booking-story .comparison.booking-visual-pair{gap:18px}
+.booking-story .booking-visual-pair figure,.booking-story .cancellation-visual-pair figure{background:#263732;border:1px solid #47645b;border-radius:20px;padding:17px;min-width:0}
+.booking-story .booking-visual-pair figure.after,.booking-story .cancellation-visual-pair figure:nth-child(2){background:#243a34;border-color:#629084}
+.booking-story .booking-visual-pair figure>span,.booking-story .cancellation-visual-pair figure>span{display:inline-block;background:#fff;color:#263732;border-radius:100px;padding:7px 11px;font-size:10px;font-weight:700;letter-spacing:.08em;margin-bottom:14px}
+.booking-story .booking-visual-pair figure.after>span,.booking-story .cancellation-visual-pair figure:nth-child(2)>span{background:#e5faf3}
+.booking-story .booking-visual-pair img,.booking-story .cancellation-visual-pair img{display:block;width:100%;height:530px;max-height:none;aspect-ratio:auto;object-fit:contain;background:#192724;border-radius:12px}
+.booking-story .booking-visual-pair figcaption,.booking-story .cancellation-visual-pair figcaption{display:block;color:#d5ded9;padding:14px 3px 2px;font-size:13px;line-height:1.5}
+.booking-story .nested-story{border-top:1px solid #547068}
+.booking-story .cancellation-visual-pair{background:transparent;padding:0;gap:18px}
+.booking-story .state-model{background:#14231f;border:1px solid #435c54}
+@media(max-width:850px){.booking-story .nested-story{grid-template-columns:1fr}.booking-story .booking-visual-pair img,.booking-story .cancellation-visual-pair img{height:450px}}
+@media(max-width:620px){.booking-story .booking-visual-pair,.booking-story .cancellation-visual-pair{grid-template-columns:1fr}.booking-story .booking-visual-pair img,.booking-story .cancellation-visual-pair img{height:470px}}
