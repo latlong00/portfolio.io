@@ -290,3 +290,32 @@ footer{align-items:center;gap:20px}.footer-contact{display:flex;align-items:cent
 .case-study:has(.nuzzly-story-nav) .case-meta{margin:18px 0 22px}
 .case-study:has(.nuzzly-story-nav) .nuzzly-single-showcase .home-browser{max-width:740px}
 }
+
+/* Nuzzly opening: put the real product beside the project framing. */
+.case-study .nuzzly-case-hero{padding:42px max(36px,calc((100vw - 1440px)/2)) 54px}
+.case-study .nuzzly-case-hero>.eyebrow{margin:28px 0 0}
+.nuzzly-hero-grid{display:grid;grid-template-columns:minmax(0,1.07fr) minmax(0,.93fr);gap:clamp(30px,4vw,72px);align-items:center;margin-top:25px}
+.case-study .nuzzly-hero-grid h1{font-size:clamp(80px,8vw,120px);margin:0 0 22px}
+.case-study .nuzzly-hero-grid .case-dek{font-size:clamp(32px,3.2vw,48px);line-height:1.08;max-width:650px}
+.case-study .nuzzly-hero-grid .nuzzly-hero-summary{max-width:560px;font-size:16px;line-height:1.55;margin:19px 0 22px}
+.case-study .nuzzly-hero-grid .live-site-link{margin:0}
+.case-study .nuzzly-hero-grid .nuzzly-single-showcase{min-height:0;padding:clamp(24px,3vw,42px) 25px 43px}
+.case-study .nuzzly-hero-grid .home-browser{max-width:none}
+.case-study .nuzzly-hero-grid .showcase-caption{left:25px;bottom:15px;font-size:9px}
+.nuzzly-hero-bottom{margin-top:32px;border-top:1px solid var(--line)}
+.case-study .nuzzly-hero-bottom .case-meta{border:0;margin:0;padding:17px 0 0;gap:20px}
+.case-study .nuzzly-hero-bottom .nuzzly-story-nav{margin:24px 0 0}
+@media(max-width:850px){
+.nuzzly-hero-grid{grid-template-columns:1fr;gap:28px}
+.case-study .nuzzly-hero-grid .nuzzly-single-showcase{max-width:720px;width:100%;margin:0}
+}
+@media(max-width:700px){
+.case-study .nuzzly-case-hero{padding:28px 20px 42px}
+.case-study .nuzzly-case-hero>.eyebrow{margin-top:30px}
+.nuzzly-hero-grid{margin-top:22px}
+.case-study .nuzzly-hero-grid h1{font-size:clamp(72px,17vw,108px);margin:0 0 18px}
+.case-study .nuzzly-hero-grid .case-dek{font-size:clamp(29px,7vw,42px)}
+.case-study .nuzzly-hero-grid .nuzzly-single-showcase{padding:20px 17px 39px}
+.nuzzly-hero-bottom{margin-top:26px}
+.case-study .nuzzly-hero-bottom .case-meta{margin:0}
+}
