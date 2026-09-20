@@ -281,3 +281,12 @@ footer{align-items:center;gap:20px}.footer-contact{display:flex;align-items:cent
 .case-study:has(.nuzzly-story-nav) .nuzzly-single-showcase{padding:18px 16px 38px}
 .case-study:has(.nuzzly-story-nav) .case-overview{padding-top:52px;padding-bottom:52px}
 }
+
+/* Final Nuzzly hero sizing: keep the screenshot legible in a shorter opening. */
+@media(min-width:701px){
+.case-study:has(.nuzzly-story-nav) .case-hero>.eyebrow{margin-top:26px}
+.case-study:has(.nuzzly-story-nav) .case-hero h1{margin:30px 0 15px}
+.case-study:has(.nuzzly-story-nav) .nuzzly-story-nav{margin:10px 0 14px}
+.case-study:has(.nuzzly-story-nav) .case-meta{margin:18px 0 22px}
+.case-study:has(.nuzzly-story-nav) .nuzzly-single-showcase .home-browser{max-width:740px}
+}
