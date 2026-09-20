@@ -212,3 +212,13 @@ footer{align-items:center;gap:20px}.footer-contact{display:flex;align-items:cent
 .nuzzly-additional-grid figcaption strong{font:400 24px/1.15 "Newsreader",serif}
 .nuzzly-additional-grid figcaption span{font-size:13px;color:var(--muted)}
 @media(max-width:700px){.nuzzly-additional-grid{grid-template-columns:1fr}.nuzzly-additional-grid img{height:280px}}
+
+/* Nuzzly: concrete acceptance checks connect the case-study proposals to QA. */
+.nuzzly-release-checks{display:grid;grid-template-columns:minmax(190px,.55fr) minmax(0,1.45fr);gap:40px;margin-top:80px;padding:34px;border:1px solid var(--line);background:#eef4ef}
+.nuzzly-release-checks h3{font:400 clamp(29px,3vw,40px)/1.1 "Newsreader",serif;margin:13px 0}
+.nuzzly-release-checks>div>p:last-child{font-size:14px;line-height:1.5;color:var(--muted)}
+.nuzzly-release-checks dl{margin:0}
+.nuzzly-release-checks dl>div{display:grid;grid-template-columns:150px 1fr;gap:20px;padding:17px 0;border-top:1px solid #bac9bf}
+.nuzzly-release-checks dt{font-size:11px;letter-spacing:.07em;text-transform:uppercase;color:#37564b}
+.nuzzly-release-checks dd{margin:0;font-size:14px;line-height:1.5}
+@media(max-width:760px){.nuzzly-release-checks{grid-template-columns:1fr;padding:24px;gap:16px}.nuzzly-release-checks dl>div{grid-template-columns:1fr;gap:7px}}
