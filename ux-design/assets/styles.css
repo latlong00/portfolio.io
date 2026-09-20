@@ -200,3 +200,15 @@ footer{align-items:center;gap:20px}.footer-contact{display:flex;align-items:cent
 .booking-story .state-model{background:#14231f;border:1px solid #435c54}
 @media(max-width:850px){.booking-story .nested-story{grid-template-columns:1fr}.booking-story .booking-visual-pair img,.booking-story .cancellation-visual-pair img{height:450px}}
 @media(max-width:620px){.booking-story .booking-visual-pair,.booking-story .cancellation-visual-pair{grid-template-columns:1fr}.booking-story .booking-visual-pair img,.booking-story .cancellation-visual-pair img{height:470px}}
+
+/* Nuzzly: a single real product image in the hero; distinct work appears in the story. */
+.case-study:has(.nuzzly-story-nav) .nuzzly-single-showcase{display:block;min-height:0;padding:clamp(22px,4vw,48px) clamp(22px,7vw,95px) 53px}
+.nuzzly-single-showcase .home-browser{max-width:1060px;margin:auto}
+.nuzzly-single-showcase .showcase-caption{bottom:17px}
+.nuzzly-additional-grid{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:22px;margin-top:10px}
+.nuzzly-additional-grid figure{min-width:0;margin:0;padding:15px;background:#f0e8dd;border:1px solid var(--line)}
+.nuzzly-additional-grid img{display:block;width:100%;height:330px;object-fit:contain;background:#fff}
+.nuzzly-additional-grid figcaption{display:grid;gap:7px;padding:15px 3px 4px;line-height:1.5}
+.nuzzly-additional-grid figcaption strong{font:400 24px/1.15 "Newsreader",serif}
+.nuzzly-additional-grid figcaption span{font-size:13px;color:var(--muted)}
+@media(max-width:700px){.nuzzly-additional-grid{grid-template-columns:1fr}.nuzzly-additional-grid img{height:280px}}
