@@ -153,3 +153,12 @@ footer{align-items:center;gap:20px}.footer-contact{display:flex;align-items:cent
 .case-study:has(.nuzzly-story-nav) #discovery{padding-top:84px}
 #discovery,#booking,#dashboard{scroll-margin-top:85px}
 @media(max-width:800px){.case-study:has(.nuzzly-story-nav) .hero-showcase-home{min-height:0}.case-study:has(.nuzzly-story-nav) .case-overview{padding-top:60px;padding-bottom:60px}.nuzzly-story-nav{margin-bottom:28px}}
+
+/* Nuzzly: make individual contributions scannable at the start of the case study. */
+.contribution-grid{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:1px;border:1px solid var(--line);background:var(--line);margin:38px 0 24px}
+.contribution-grid article{background:var(--cream);padding:24px 22px 28px}
+.contribution-grid span{font-size:10px;letter-spacing:.13em;color:var(--coral-dark)}
+.contribution-grid h3{font:400 clamp(24px,2.2vw,30px)/1.1 "Newsreader",serif;margin:27px 0 12px}
+.contribution-grid p{font-size:13px!important;line-height:1.5!important;color:var(--muted)}
+.case-overview .contribution-note{font-size:14px;line-height:1.55;color:var(--muted)}
+@media(max-width:700px){.contribution-grid{grid-template-columns:1fr}.contribution-grid article{padding:20px}.contribution-grid h3{margin:12px 0}}
