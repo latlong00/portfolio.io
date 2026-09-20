@@ -5,7 +5,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <meta name="description" content="Nuzzly UX design case study by Laticia Long: marketplace discovery, messaging, booking states, dashboards, and safety.">
   <title>Nuzzly UX Design Case Study — Laticia Long</title>
-  <link rel="stylesheet" href="../assets/styles.css?v=45">
+  <link rel="stylesheet" href="../assets/styles.css?v=46">
   <script defer src="../assets/site.js?v=4"></script>
 </head>
 <body id="top">
@@ -28,10 +28,9 @@
         <dl><dt>Platform</dt><dd>Responsive marketplace</dd></dl>
         <dl><dt>Focus</dt><dd>Discovery · booking · management</dd></dl>
       </div>
-      <div class="hero-showcase hero-showcase-home">
- <div class="home-browser"><div class="home-browser-bar"><span></span><span></span><span></span><b>nuzzly.us</b></div><img src="https://laticia-nuzzly-case-study.yanhong-long.chatgpt.site/assets/nuzzly-web-homepage.png" alt="Real Nuzzly desktop homepage with sitter search and trust cues"></div>
- <div class="home-phone"><img src="https://laticia-nuzzly-case-study.yanhong-long.chatgpt.site/assets/chat-state-redesign-coral.png" alt="Nuzzly booking-state redesign in a mobile frame"></div>
- <p class="showcase-caption">DISCOVER → MESSAGE → CONFIRM</p>
+      <div class="hero-showcase hero-showcase-home nuzzly-single-showcase">
+ <div class="home-browser"><div class="home-browser-bar"><span></span><span></span><span></span><b>nuzzly.us</b></div><img src="https://laticia-nuzzly-case-study.yanhong-long.chatgpt.site/assets/nuzzly-web-homepage.png" alt="Nuzzly desktop homepage with sitter search and trust cues"></div>
+ <p class="showcase-caption">THE LIVE MARKETPLACE · RESPONSIVE WEB</p>
  </div></section>
 
     <section class="case-overview split-section">
@@ -66,8 +65,6 @@
         <figure><span>BEFORE · CONFLICTING STATES</span><img src="https://laticia-nuzzly-case-study.yanhong-long.chatgpt.site/assets/chat-state-before-clean.png" alt="Original Nuzzly messages showing conflicting booking states"><figcaption>The card, timeline, and actions describe different versions of the transaction.</figcaption></figure>
         <figure class="after"><span>AFTER · AUTHORITATIVE STATE</span><img src="https://laticia-nuzzly-case-study.yanhong-long.chatgpt.site/assets/chat-state-redesign-coral.png" alt="Nuzzly redesigned declined invitation state"><figcaption>One current status explains what happened and offers one relevant recovery path.</figcaption></figure>
       </div>
-      <div class="state-model"><span>OWNER ACCEPTS</span><i>→</i><span>WAITING FOR SITTER</span><i>→</i><span class="success">CONFIRMED</span><em>or</em><span class="declined">DECLINED → FIND ANOTHER SITTER</span></div>
-
       <div class="nested-story">
         <div><p class="eyebrow coral">DESTRUCTIVE ACTIONS</p><h3>Make opposite choices look and sound different.</h3><p>The cancellation dialog used “Cancel” to keep a booking and “Cancel Booking” to end it. I changed the safe action to <strong>Keep booking</strong>, retained an explicit destructive label, and gave the two actions distinct visual weight.</p></div>
         <div class="phone-comparison cancellation-visual-pair"><figure><span>BEFORE · ORIGINAL LAYOUT</span><img src="https://laticia-nuzzly-case-study.yanhong-long.chatgpt.site/assets/chat-cancel-before-no-alipay-v2.png" alt="Original ambiguous Nuzzly cancellation dialog"><figcaption>“Cancel” dismissed the dialog while “Cancel Booking” ended the booking.</figcaption></figure><figure><span>AFTER · REDESIGN</span><img src="https://laticia-nuzzly-case-study.yanhong-long.chatgpt.site/assets/chat-cancel-redesign-no-alipay-v2.png" alt="Redesigned Nuzzly cancellation dialog"><figcaption>The revised dialog names the dates and consequence, then separates <strong>Keep booking</strong> from <strong>Cancel booking</strong>.</figcaption></figure></div>
@@ -86,13 +83,23 @@
           <div class="dashboard-step recommended"><span>03 / MY RECOMMENDATION</span><h3>“Contact details will be shared after confirmation.”</h3><p>Keep the confirmation rule; say it in plain language.</p></div>
         </div>
       </div>
-      <div class="dashboard-action-compare" aria-label="Messaging action before and recommendation"><div><span>BEFORE · DUPLICATE ACTION</span><s>Message Owner + Message</s></div><div><span>RECOMMENDATION · ONE INTENT</span><strong>One primary messaging action</strong><p>Make the route to a conversation unambiguous on the booking card.</p></div></div>
       <div class="support-example">
         <div class="support-example-intro"><p class="eyebrow coral">SUPPORTING EXAMPLE · SUPPORT CHAT</p><h3>Complete the human handoff.</h3><p>When a user agreed to connect with support, the system needed to acknowledge the request, explain what would transfer, and provide one clear next action.</p></div>
         <div class="support-comparison">
           <figure class="support-before"><div class="support-card-label"><span>BEFORE</span><span>Intent not completed</span></div><div class="support-image-wrap"><img src="https://laticia-nuzzly-case-study.yanhong-long.chatgpt.site/assets/support-handoff.png" alt="Original Nuzzly support chat: user says ok connect me but must choose a separate Message Nuzzly Support button"></div><figcaption>The user wrote “ok connect me,” but the system did not initiate or clearly acknowledge the handoff.</figcaption></figure>
           <div class="support-after"><div class="support-card-label"><span>AFTER · CONTENT PATTERN</span></div><div class="support-response"><span class="support-heart" aria-hidden="true">♥</span><p><strong>I can connect you with Nuzzly Support.</strong><br>Your conversation summary will be included so you won’t need to repeat everything.</p></div><div class="support-action">Message Nuzzly Support</div><p class="support-explanation">The response acknowledges intent, sets expectations, and gives the user one next step.</p></div>
         </div>
+      </div>
+    </section>
+
+    <section class="case-section nuzzly-additional">
+      <header class="section-heading"><span>04</span><div><p>ADDITIONAL INTERFACE IMPROVEMENTS</p><h2>The same standards across smaller moments.</h2></div></header>
+      <div class="section-copy"><p>Beyond the three core journeys, I documented targeted changes to Community, sign-in, the Welcome Guide, and reviews. These examples show how clearer navigation, memory, print behavior, and completion feedback extend across the product.</p></div>
+      <div class="nuzzly-additional-grid">
+        <figure><img src="https://laticia-nuzzly-case-study.yanhong-long.chatgpt.site/assets/community-audit.png" alt="Annotated Nuzzly Community page UX audit"><figcaption><strong>Community page</strong><span>Annotated navigation and content issues in the community experience.</span></figcaption></figure>
+        <figure><img src="https://laticia-nuzzly-case-study.yanhong-long.chatgpt.site/assets/signin-comparison.png" alt="Nuzzly remembered-email sign-in comparison"><figcaption><strong>Remembered-email sign-in</strong><span>Made the returning-user path easier to recognize.</span></figcaption></figure>
+        <figure><img src="https://laticia-nuzzly-case-study.yanhong-long.chatgpt.site/assets/welcome-guide-print.png" alt="Nuzzly Welcome Guide print issue"><figcaption><strong>Printable Welcome Guide</strong><span>Documented where the guide’s print experience broke down.</span></figcaption></figure>
+        <figure><img src="https://laticia-nuzzly-case-study.yanhong-long.chatgpt.site/assets/review-form.png" alt="Nuzzly review form"><figcaption><strong>Review completion</strong><span>Clarified the path to finishing a review.</span></figcaption></figure>
       </div>
     </section>
 
