@@ -5,7 +5,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <meta name="description" content="Nuzzly UX design case study by Laticia Long: marketplace discovery, messaging, booking states, dashboards, and safety.">
   <title>Nuzzly UX Design Case Study — Laticia Long</title>
-  <link rel="stylesheet" href="../assets/styles.css?v=42">
+  <link rel="stylesheet" href="../assets/styles.css?v=43">
   <script defer src="../assets/site.js?v=4"></script>
 </head>
 <body id="top">
@@ -20,7 +20,7 @@
       <a class="back-link" href="../">← All work</a>
       <p class="eyebrow coral">UX DESIGN · UX RESEARCH · UX WRITING · QA</p>
       <h1>Nuzzly</h1>
-      <p class="case-dek">Making pet care easier to discover, book, and manage.</p><a class="live-site-link" href="https://nuzzly.us/" target="_blank" rel="noopener noreferrer" aria-label="Visit the live Nuzzly site (opens in a new tab)">Visit live Nuzzly site <span aria-hidden="true">↗</span></a>
+      <p class="case-dek">I redesigned discovery, booking, and dashboard journeys for a two-sided pet-care marketplace.</p><a class="live-site-link" href="https://nuzzly.us/" target="_blank" rel="noopener noreferrer" aria-label="Visit the live Nuzzly site (opens in a new tab)">Visit live Nuzzly site <span aria-hidden="true">↗</span></a>
       <nav class="nuzzly-story-nav" aria-label="Jump to case study stories"><a href="#discovery">01 Discovery ↓</a><a href="#booking">02 Booking ↓</a><a href="#dashboard">03 Dashboard ↓</a></nav>
       <div class="case-meta">
         <dl><dt>My role</dt><dd>UX design, UX writing, product QA</dd></dl>
@@ -37,20 +37,20 @@
     <section class="case-overview split-section">
       <p class="section-index">OVERVIEW</p>
       <div>
-        <h2>Three journeys where clearer design builds trust.</h2>
-        <p>Nuzzly connects pet owners with sitters. I tested complete journeys across discovery, applications, booking, messaging, support, and listing management. The main problem wasn’t one isolated screen: the experience communicated different rules in different places.</p>
-        <p>I mapped the breakdowns, redesigned the highest-risk flows, and paired interaction changes with language that accurately reflected system behavior.</p>
-        <div class="challenge-grid">
-          <div><span>40+</span><p>UX, content, and product issues documented</p></div>
-          <div><span>2</span><p>Marketplace roles tested end to end</p></div>
-          <div><span>3</span><p>Core journeys redesigned in depth</p></div>
+        <h2>What I changed across the marketplace.</h2>
+        <p>Nuzzly connects pet owners with sitters. I tested both roles through search, applications, booking, messages, and dashboards, documenting more than 40 UX, content, and product issues.</p>
+        <div class="contribution-grid" aria-label="My contributions">
+          <article><span>01 / DISCOVERY</span><h3>Redesigned search and results</h3><p>Clarified the active search mode, applied filters, and the details people need to compare listings.</p></article>
+          <article><span>02 / BOOKING</span><h3>Reworked changing states</h3><p>Aligned the booking card, message timeline, available actions, and cancellation language.</p></article>
+          <article><span>03 / MANAGEMENT</span><h3>Improved the dashboard</h3><p>Made next actions, contact-sharing rules, and support pathways easier to understand.</p></article>
         </div>
+        <p class="contribution-note">I paired the interface proposals with UX copy and QA criteria so the intended behavior could be reviewed and tested.</p>
       </div>
     </section>
 
     <section class="case-section" id="discovery">
       <header class="section-heading"><span>01</span><div><p>EXPLORE + DISCOVERY</p><h2>Make the user’s goal visible before showing the inventory.</h2></div></header>
-      <div class="section-copy"><p>The original Explore experience mixed search modes, location filters, and saved-item behavior. Before users could evaluate a listing, they first had to interpret how the page worked.</p><p>I reorganized the experience around the primary task—<strong>Find a sit</strong>—then clarified filter labels, separated view controls from saved items, and strengthened the information hierarchy of each result.</p></div>
+      <div class="section-copy"><p><strong>Problem:</strong> Explore mixed search modes, location filters, and saved-item controls. People had to interpret the page before they could evaluate a listing.</p><p><strong>My redesign:</strong> I named the primary task <strong>Find a sit</strong>, grouped filters, separated save actions from view controls, and made result details easier to compare.</p></div>
       <div class="comparison">
         <figure><span>BEFORE · UNCLEAR MODE</span><img src="https://laticia-nuzzly-case-study.yanhong-long.chatgpt.site/assets/explore-before-coral-clean.png" alt="Original Nuzzly Explore interface"><figcaption>Competing controls and ambiguous modes made the starting point difficult to scan.</figcaption></figure>
         <figure class="after"><span>AFTER · TASK-LED DISCOVERY</span><img src="https://laticia-nuzzly-case-study.yanhong-long.chatgpt.site/assets/explore-listings-after-coral.png" alt="Redesigned Nuzzly Explore interface"><figcaption>The redesign names the task, groups filters, and makes results easier to compare.</figcaption></figure>
@@ -61,7 +61,7 @@
 
     <section class="case-section alt-section" id="booking">
       <header class="section-heading"><span>02</span><div><p>MESSAGING + BOOKING STATES</p><h2>Design one source of truth for a changing transaction.</h2></div></header>
-      <div class="section-copy"><p>After an owner accepted a sitter, the interface could display <strong>Booking Confirmed</strong> while the timeline said the sitter had declined. Stale buttons remained available, so the next step was unclear.</p><p>I redesigned the card as a state-based component: the status, explanation, and action change together. A declined invitation removes invalid booking controls and leads the owner toward finding another sitter.</p></div>
+      <div class="section-copy"><p><strong>Problem:</strong> A card could say <strong>Booking Confirmed</strong> while the timeline said the sitter had declined. Stale buttons still offered booking actions.</p><p><strong>My redesign:</strong> The status, explanation, and action now change together. A declined invitation removes invalid controls and points the owner to <strong>Find another sitter</strong>.</p></div>
       <div class="comparison">
         <figure><span>BEFORE · CONFLICTING STATES</span><img src="https://laticia-nuzzly-case-study.yanhong-long.chatgpt.site/assets/chat-state-before-clean.png" alt="Original Nuzzly messages showing conflicting booking states"><figcaption>The card, timeline, and actions describe different versions of the transaction.</figcaption></figure>
         <figure class="after"><span>AFTER · AUTHORITATIVE STATE</span><img src="https://laticia-nuzzly-case-study.yanhong-long.chatgpt.site/assets/chat-state-redesign-coral.png" alt="Nuzzly redesigned declined invitation state"><figcaption>One current status explains what happened and offers one relevant recovery path.</figcaption></figure>
@@ -76,7 +76,7 @@
 
     <section class="case-section" id="dashboard">
       <header class="section-heading"><span>03</span><div><p>DASHBOARD + LISTING MANAGEMENT</p><h2>Show what users can do now—and what becomes available later.</h2></div></header>
-      <div class="section-copy"><p>The dashboard mixed applications, active sits, support, and messaging without explaining when private contact details were shared. Some actions appeared twice, while important state boundaries were invisible.</p><p>I treated the dashboard as an operational workspace: one primary action per intent, clearer tabs, visible confirmation status, and transparent rules for contact sharing and emergency support.</p></div>
+      <div class="section-copy"><p><strong>Problem:</strong> The dashboard mixed applications, active sits, support, and messaging. Contact-sharing rules were unclear and some message actions appeared twice.</p><p><strong>My proposal:</strong> I organized the dashboard around the next task, with one message entry point per intent, clearer status, and plain-language rules for when contact details become available.</p></div>
       <div class="dashboard-comparison">
         <figure class="dashboard-proof"><div class="crop-banner"><img src="https://laticia-nuzzly-case-study.yanhong-long.chatgpt.site/assets/dashboard-before.png" alt="Later Nuzzly dashboard with Emergency and support panel, technical contact-sharing text, and duplicate messaging actions"></div><figcaption><b>Later product state</b><span>The support panel made the sharing boundary visible, while its copy still exposed backend language and two actions led to messaging.</span></figcaption></figure>
         <div class="dashboard-evolution">
