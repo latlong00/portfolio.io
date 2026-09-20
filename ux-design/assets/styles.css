@@ -343,3 +343,34 @@ footer{align-items:center;gap:20px}.footer-contact{display:flex;align-items:cent
 .nuzzly-systems-grid article{background:#f8fbf8}
 @media(max-width:850px){.nuzzly-color-story{grid-template-columns:1fr;gap:22px}.nuzzly-dashboard-decisions,.nuzzly-systems-grid{grid-template-columns:repeat(2,minmax(0,1fr))}}
 @media(max-width:600px){.nuzzly-visual-direction,.nuzzly-systems{padding:52px 20px}.nuzzly-palette{grid-template-columns:repeat(2,1fr)}.nuzzly-dashboard-decisions,.nuzzly-systems-grid{grid-template-columns:1fr}.nuzzly-color-story{margin-top:28px}}
+
+/* Nuzzly header follows the Iron Mountain case-study hierarchy. */
+.case-study .nuzzly-iron-hero{padding:75px 36px 65px;background:linear-gradient(145deg,var(--cream),#f9eae3)}
+.case-study .nuzzly-iron-hero>.eyebrow{margin-top:70px}
+.case-study .nuzzly-iron-hero h1{font:400 clamp(80px,12vw,170px)/.8 "Newsreader",serif;letter-spacing:-.06em;margin:75px 0 34px}
+.case-study .nuzzly-iron-hero .case-dek{font:400 clamp(28px,4vw,55px)/1.05 "Newsreader",serif;max-width:850px;margin:0}
+.case-study .nuzzly-iron-hero .nuzzly-hero-summary{max-width:770px;margin:26px 0 13px}
+.case-study .nuzzly-iron-hero .case-meta{margin:53px 0 50px}
+.nuzzly-hero-art{background:#1d2c29;padding:clamp(28px,4vw,60px);display:grid;grid-template-columns:.7fr 1.3fr;gap:20px;color:white}
+.nuzzly-journey-art{display:flex;flex-direction:column;justify-content:space-between;border:1px solid #618075;padding:31px;min-height:250px}
+.nuzzly-journey-art>span,.nuzzly-challenge-art>span{font-size:11px;letter-spacing:.12em;color:#f48778}
+.nuzzly-journey-art div{display:flex;align-items:center;gap:8px;flex-wrap:wrap}
+.nuzzly-journey-art b{font:400 22px "Newsreader",serif}
+.nuzzly-journey-art i{font-style:normal;color:#f48778}
+.nuzzly-challenge-art{background:#f5f0e8;color:#1d2c29;padding:clamp(25px,3vw,43px)}
+.nuzzly-challenge-art h2{font:400 clamp(32px,3.3vw,49px)/1.02 "Newsreader",serif;margin:24px 0 15px;max-width:600px}
+.nuzzly-challenge-art p{font-size:15px;line-height:1.55;max-width:580px;color:#57635b}
+.case-study .nuzzly-iron-hero .nuzzly-story-nav{margin:23px 0 0}
+.nuzzly-desktop-proof{margin:35px 0 0;background:#fff;border:1px solid var(--line);padding:16px}
+.nuzzly-desktop-proof .home-browser{max-width:none;box-shadow:none}
+.nuzzly-desktop-proof figcaption{display:flex;gap:22px;align-items:baseline;padding:17px 9px 3px;color:var(--muted);font-size:13px;line-height:1.5}
+.nuzzly-desktop-proof figcaption strong{flex:none;color:var(--coral-dark);font-size:10px;letter-spacing:.12em}
+.nuzzly-visual-direction .nuzzly-color-story{background:#1d2c29;color:#f8f4ed;padding:clamp(25px,4vw,48px);border:0;margin-top:28px;gap:42px}
+.nuzzly-visual-direction .nuzzly-color-story h3{font-size:clamp(32px,3.2vw,45px)}
+.nuzzly-visual-direction .nuzzly-color-story p:last-child{color:#d0d9d4}
+.nuzzly-visual-direction .nuzzly-palette{grid-template-columns:repeat(2,1fr);gap:10px}
+.nuzzly-visual-direction .nuzzly-palette span{height:92px;border-radius:5px}
+.nuzzly-visual-direction .nuzzly-palette small{color:#e6eae7}
+.nuzzly-visual-direction .nuzzly-palette b{color:white}
+@media(max-width:800px){.nuzzly-hero-art{grid-template-columns:1fr}.nuzzly-journey-art{min-height:150px}.nuzzly-visual-direction .nuzzly-color-story{grid-template-columns:1fr}}
+@media(max-width:600px){.case-study .nuzzly-iron-hero{padding:35px 20px 45px}.case-study .nuzzly-iron-hero>.eyebrow{margin-top:48px}.case-study .nuzzly-iron-hero h1{margin:52px 0 26px}.case-study .nuzzly-iron-hero .case-meta{margin:35px 0}.nuzzly-hero-art{padding:18px}.nuzzly-journey-art,.nuzzly-challenge-art{padding:23px}.nuzzly-desktop-proof{padding:9px}.nuzzly-desktop-proof figcaption{display:block}.nuzzly-desktop-proof figcaption span{display:block;margin-top:5px}}
