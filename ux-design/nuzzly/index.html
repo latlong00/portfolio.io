@@ -5,7 +5,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <meta name="description" content="Nuzzly UX design case study by Laticia Long: marketplace discovery, messaging, booking states, dashboards, and safety.">
   <title>Nuzzly UX Design Case Study — Laticia Long</title>
-  <link rel="stylesheet" href="../assets/styles.css?v=44">
+  <link rel="stylesheet" href="../assets/styles.css?v=45">
   <script defer src="../assets/site.js?v=4"></script>
 </head>
 <body id="top">
@@ -59,10 +59,10 @@
       <div class="nested-story filter-story"><div><p class="eyebrow coral">SITTER FILTERS</p><h3>Keep applied criteria visible and easy to revise.</h3><p>Filters appeared after search without a compact summary, removable selections, or a clear reset action. The redesign uses chips, <strong>Filters 2</strong>, <strong>Clear all</strong>, result count, and sorting so the current search state never disappears.</p></div><div class="comparison"><figure><span>BEFORE · UNCLEAR FILTER STATE</span><img src="https://laticia-nuzzly-case-study.yanhong-long.chatgpt.site/assets/explore-filters-coral-clean.png" alt="Original Nuzzly sitter results and filter controls"></figure><figure class="after"><span>AFTER · VISIBLE APPLIED STATE</span><img src="https://laticia-nuzzly-case-study.yanhong-long.chatgpt.site/assets/explore-filters-after-coral.png" alt="Redesigned Nuzzly sitter search with removable filters and result count"></figure></div></div>
     </section>
 
-    <section class="case-section alt-section" id="booking">
+    <section class="case-section alt-section booking-story" id="booking">
       <header class="section-heading"><span>02</span><div><p>MESSAGING + BOOKING STATES</p><h2>Design one source of truth for a changing transaction.</h2></div></header>
       <div class="section-copy"><p><strong>Problem:</strong> A card could say <strong>Booking Confirmed</strong> while the timeline said the sitter had declined. Stale buttons still offered booking actions.</p><p><strong>My redesign:</strong> The status, explanation, and action now change together. A declined invitation removes invalid controls and points the owner to <strong>Find another sitter</strong>.</p></div>
-      <div class="comparison">
+      <div class="comparison booking-visual-pair">
         <figure><span>BEFORE · CONFLICTING STATES</span><img src="https://laticia-nuzzly-case-study.yanhong-long.chatgpt.site/assets/chat-state-before-clean.png" alt="Original Nuzzly messages showing conflicting booking states"><figcaption>The card, timeline, and actions describe different versions of the transaction.</figcaption></figure>
         <figure class="after"><span>AFTER · AUTHORITATIVE STATE</span><img src="https://laticia-nuzzly-case-study.yanhong-long.chatgpt.site/assets/chat-state-redesign-coral.png" alt="Nuzzly redesigned declined invitation state"><figcaption>One current status explains what happened and offers one relevant recovery path.</figcaption></figure>
       </div>
@@ -70,7 +70,7 @@
 
       <div class="nested-story">
         <div><p class="eyebrow coral">DESTRUCTIVE ACTIONS</p><h3>Make opposite choices look and sound different.</h3><p>The cancellation dialog used “Cancel” to keep a booking and “Cancel Booking” to end it. I changed the safe action to <strong>Keep booking</strong>, retained an explicit destructive label, and gave the two actions distinct visual weight.</p></div>
-        <div class="phone-comparison"><figure><span>BEFORE</span><img src="https://laticia-nuzzly-case-study.yanhong-long.chatgpt.site/assets/chat-cancel-before-no-alipay-v2.png" alt="Original ambiguous Nuzzly cancellation dialog"></figure><figure><span>AFTER</span><img src="https://laticia-nuzzly-case-study.yanhong-long.chatgpt.site/assets/chat-cancel-redesign-no-alipay-v2.png" alt="Redesigned Nuzzly cancellation dialog"></figure></div>
+        <div class="phone-comparison cancellation-visual-pair"><figure><span>BEFORE · ORIGINAL LAYOUT</span><img src="https://laticia-nuzzly-case-study.yanhong-long.chatgpt.site/assets/chat-cancel-before-no-alipay-v2.png" alt="Original ambiguous Nuzzly cancellation dialog"><figcaption>“Cancel” dismissed the dialog while “Cancel Booking” ended the booking.</figcaption></figure><figure><span>AFTER · REDESIGN</span><img src="https://laticia-nuzzly-case-study.yanhong-long.chatgpt.site/assets/chat-cancel-redesign-no-alipay-v2.png" alt="Redesigned Nuzzly cancellation dialog"><figcaption>The revised dialog names the dates and consequence, then separates <strong>Keep booking</strong> from <strong>Cancel booking</strong>.</figcaption></figure></div>
       </div>
     </section>
 
