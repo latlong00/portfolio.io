@@ -5,7 +5,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <meta name="description" content="Nuzzly UX design case study by Laticia Long: marketplace discovery, messaging, booking states, dashboards, and safety.">
   <title>Nuzzly UX Design Case Study — Laticia Long</title>
-  <link rel="stylesheet" href="../assets/styles.css?v=52">
+  <link rel="stylesheet" href="../assets/styles.css?v=53">
   <script defer src="../assets/site.js?v=4"></script>
 </head>
 <body id="top">
@@ -45,8 +45,8 @@
     <section class="case-overview split-section nuzzly-overview">
       <p class="section-index">OVERVIEW</p>
       <div>
-        <h2>The problem behind the screens.</h2>
-        <p>Owners and sitters moved through different tasks, but both needed to understand what was available, what had changed, and what to do next. Testing both roles exposed more than 40 UX and product issues, from ambiguous search modes to booking states that disagreed across screens.</p>
+        <h2>Designing trust across a two-sided marketplace.</h2>
+        <p>Nuzzly coordinates owners, sitters, verification, listings, applications, messages, bookings, and private contact information. I traced the journeys in both roles, documented friction with screenshots and reproduction steps, designed interface and content changes, and turned critical behavior into QA criteria.</p>
         <div class="nuzzly-contribution" aria-label="What I contributed">
           <p class="eyebrow coral">WHAT I CONTRIBUTED</p>
           <ul>
@@ -59,9 +59,26 @@
       </div>
     </section>
 
-        <section class="case-section discovery-story" id="discovery">
-      <header class="section-heading"><span>01</span><div><p>EXPLORE + DISCOVERY</p><h2>Make the user’s goal visible before showing the inventory.</h2></div></header>
-      <div class="section-copy"><p>Explore put sitter and listing searches alongside overlapping save and filter controls. I separated the tasks and made the current search state visible, so people could understand what they were seeing and change their criteria.</p></div>
+        <section class="nuzzly-visual-direction" aria-labelledby="visual-direction-title">
+      <div class="nuzzly-visual-intro">
+        <p class="eyebrow coral">WEB EXPERIENCE + VISUAL DIRECTION</p>
+        <h2 id="visual-direction-title">A marketplace across desktop and mobile.</h2>
+        <p>My work covered the public website and browser-based owner and sitter journeys. The same terms, actions, and trust cues needed to work across screen sizes.</p>
+      </div>
+      <div class="nuzzly-color-story">
+        <div><p class="eyebrow coral">WHY CORAL</p><h3>Warmth with a clear purpose.</h3><p>Coral feels friendly and energetic for a community built around pets, homes, and personal trust. I used it for primary actions, active states, and moments needing attention; dark neutrals and light surfaces keep the rest of the interface grounded.</p></div>
+        <div class="nuzzly-palette" aria-label="Nuzzly interface palette">
+          <div><span style="background:#ff6558"></span><small>Primary coral<br><b>#FF6558</b></small></div>
+          <div><span style="background:#e7483e"></span><small>Deep coral<br><b>#E7483E</b></small></div>
+          <div><span style="background:#17201d"></span><small>Grounding ink<br><b>#17201D</b></small></div>
+          <div><span style="background:#f7faf8"></span><small>Soft surface<br><b>#F7FAF8</b></small></div>
+        </div>
+      </div>
+    </section>
+
+    <section class="case-section discovery-story" id="discovery">
+      <header class="section-heading"><span>01</span><div><p>EXPLORE + DISCOVERY</p><h2>Connect creation, discovery, and applications.</h2></div></header>
+      <div class="section-copy"><p>The listing journey began before the form and continued after publishing. Owners needed clear prerequisites and management actions; sitters needed results with visible availability, requirements, and application status. In Explore, I separated search modes and made the current criteria easier to understand and revise.</p></div>
       <div class="journey-block"><p class="eyebrow coral">OWNER LISTING JOURNEY</p><div class="journey"><span>Complete verification</span><i>→</i><span>Get membership</span><i>→</i><span>Create listing</span><i>→</i><span>Publish</span><i>→</i><span>Review applications</span></div></div>
       <div class="discovery-findings" aria-label="Discovery issues"><p><strong>Mode ambiguity</strong><span>Sitters and Listings shared one surface.</span></p><p><strong>Competing save actions</strong><span>Search and saved-item controls competed for attention.</span></p><p><strong>Incomplete context</strong><span>Results and applied criteria were hard to scan.</span></p></div>
       <div class="discovery-example">
@@ -81,8 +98,8 @@
     </section>
 
     <section class="case-section alt-section booking-story" id="booking">
-      <header class="section-heading"><span>02</span><div><p>MESSAGING + BOOKING STATES</p><h2>Design one source of truth for a changing transaction.</h2></div></header>
-      <div class="section-copy"><p><strong>Problem:</strong> A card could say <strong>Booking Confirmed</strong> while the timeline said the sitter had declined. Stale buttons still offered booking actions.</p><p><strong>My redesign:</strong> The status, explanation, and action now change together. A declined invitation removes invalid controls and points the owner to <strong>Find another sitter</strong>.</p></div>
+      <header class="section-heading"><span>02</span><div><p>MESSAGING + BOOKING STATES</p><h2>Turn conversation into a dependable transaction record.</h2></div></header>
+      <div class="section-copy"><p>Direct messages carried applications, owner acceptance, sitter confirmation, date changes, cancellations, and safety communication. A card could still say <strong>Booking Confirmed</strong> after the timeline said the sitter declined. My redesign makes the status, explanation, and available action change together, with <strong>Find another sitter</strong> as the relevant next step.</p></div>
       <div class="comparison booking-visual-pair">
         <figure><span>BEFORE · CONFLICTING STATES</span><img src="https://laticia-nuzzly-case-study.yanhong-long.chatgpt.site/assets/chat-state-before-clean.png" alt="Original Nuzzly messages showing conflicting booking states"><figcaption>The card, timeline, and actions describe different versions of the transaction.</figcaption></figure>
         <figure class="after"><span>AFTER · AUTHORITATIVE STATE</span><img src="https://laticia-nuzzly-case-study.yanhong-long.chatgpt.site/assets/chat-state-redesign-coral.png" alt="Nuzzly redesigned declined invitation state"><figcaption>One current status explains what happened and offers one relevant recovery path.</figcaption></figure>
@@ -94,8 +111,8 @@
     </section>
 
     <section class="case-section" id="dashboard">
-      <header class="section-heading"><span>03</span><div><p>DASHBOARD + LISTING MANAGEMENT</p><h2>Show what users can do now—and what becomes available later.</h2></div></header>
-      <div class="section-copy"><p><strong>Problem:</strong> The dashboard mixed applications, active sits, support, and messaging. Contact-sharing rules were unclear and some message actions appeared twice.</p><p><strong>My proposal:</strong> I organized the dashboard around the next task, with one message entry point per intent, clearer status, and plain-language rules for when contact details become available.</p></div>
+      <header class="section-heading"><span>03</span><div><p>DASHBOARD + LISTING MANAGEMENT</p><h2>Organize each role around its next decision.</h2></div></header>
+      <div class="section-copy"><p>Owners needed listing, trip, application, and review actions; sitters needed application and booking updates. Both roles needed reliable status, direct messages, and support. The later dashboard exposed technical contact-sharing copy and duplicated messaging, so I proposed a clearer next-action hierarchy and simpler language.</p></div>
       <div class="dashboard-comparison">
         <figure class="dashboard-proof"><div class="crop-banner"><img src="https://laticia-nuzzly-case-study.yanhong-long.chatgpt.site/assets/dashboard-before.png" alt="Later Nuzzly dashboard with Emergency and support panel, technical contact-sharing text, and duplicate messaging actions"></div><figcaption><b>Later product state</b><span>The support panel made the sharing boundary visible, while its copy still exposed backend language and two actions led to messaging.</span></figcaption></figure>
         <div class="dashboard-evolution">
@@ -105,12 +122,28 @@
           <div class="dashboard-step recommended"><span>03 / MY RECOMMENDATION</span><h3>“Contact details will be shared after confirmation.”</h3><p>Keep the confirmation rule; say it in plain language.</p></div>
         </div>
       </div>
+      <div class="nuzzly-dashboard-decisions" aria-label="Dashboard design decisions">
+        <article><span>OWNER ACTION</span><h3>Add trip</h3><p>Surface a frequent owner task alongside Create listing and Find a sitter.</p></article>
+        <article><span>EMPTY-STATE ACCURACY</span><h3>No active sits right now</h3><p>Avoid “yet” when the person may have completed stays before.</p></article>
+        <article><span>ATTENTION HIERARCHY</span><h3>Show workload</h3><p>Bring applications, unread messages, and pending reviews out of hidden tabs.</p></article>
+        <article><span>INTERACTION CONSISTENCY</span><h3>One message action</h3><p>Keep the action attached to the right listing or booking.</p></article>
+      </div>
       <div class="support-example">
         <div class="support-example-intro"><p class="eyebrow coral">SUPPORTING EXAMPLE · SUPPORT CHAT</p><h3>Complete the human handoff.</h3><p>When a user agreed to connect with support, the system needed to acknowledge the request, explain what would transfer, and provide one clear next action.</p></div>
         <div class="support-comparison">
           <figure class="support-before"><div class="support-card-label"><span>BEFORE</span><span>Intent not completed</span></div><div class="support-image-wrap"><img src="https://laticia-nuzzly-case-study.yanhong-long.chatgpt.site/assets/support-handoff.png" alt="Original Nuzzly support chat: user says ok connect me but must choose a separate Message Nuzzly Support button"></div><figcaption>The user wrote “ok connect me,” but the system did not initiate or clearly acknowledge the handoff.</figcaption></figure>
           <div class="support-after"><div class="support-card-label"><span>AFTER · CONTENT PATTERN</span></div><div class="support-response"><span class="support-heart" aria-hidden="true">♥</span><p><strong>I can connect you with Nuzzly Support.</strong><br>Your conversation summary will be included so you won’t need to repeat everything.</p></div><div class="support-action">Message Nuzzly Support</div><p class="support-explanation">The response acknowledges intent, sets expectations, and gives the user one next step.</p></div>
         </div>
+      </div>
+    </section>
+
+    <section class="nuzzly-systems" aria-labelledby="nuzzly-systems-title">
+      <div class="nuzzly-systems-heading"><p class="eyebrow coral">FROM SCREENS TO SYSTEMS</p><h2 id="nuzzly-systems-title">Turning UX intent into launch criteria.</h2><p>Across listing creation, browsing, applications, messaging, confirmation, support, and recovery, I documented the behavior that needed to remain consistent as the interface changed.</p></div>
+      <div class="nuzzly-systems-grid">
+        <article><span>MESSAGING</span><h3>No duplicate CTAs</h3><p>Each intent has one clear entry point and a recovery path.</p></article>
+        <article><span>PRIVACY</span><h3>Reveal details at the right state</h3><p>Private contact information follows confirmation logic.</p></article>
+        <article><span>SAFETY</span><h3>Keep urgent communication visible</h3><p>Emergency guidance must not cover the active chat.</p></article>
+        <article><span>STATUS</span><h3>One event, one system truth</h3><p>Cards, timelines, notices, and available actions agree.</p></article>
       </div>
     </section>
 
@@ -127,7 +160,7 @@
 
     <section class="outcome split-section">
       <p class="section-index">OUTCOME</p>
-      <div><h2>From findings to decisions the team could use.</h2><p><strong>Documented:</strong> I recorded more than 40 UX, content, and product issues across owner and sitter journeys, with screenshots and reproduction steps.</p><p><strong>Designed:</strong> I created interface and copy proposals for discovery, booking-state consistency, dashboard actions, and support.</p><p><strong>Prepared for release:</strong> I translated critical rules into QA checks for status, permissions, privacy, messaging, and recovery so future implementation could be tested against the intended experience.</p><blockquote class="closing-quote">A booking card, its timeline, and its available actions should tell the same story.</blockquote><a class="button" href="../">Back to all work <span>↗</span></a></div>
+      <div><h2>From findings to decisions the team could use.</h2><p><strong>Documented:</strong> I recorded more than 40 UX, content, and product issues across owner and sitter journeys, with screenshots and reproduction steps.</p><p><strong>Designed:</strong> I created interface and copy proposals for discovery, booking-state consistency, dashboard actions, and support.</p><p><strong>Prepared for release:</strong> I connected the design proposals to the launch criteria above, so the team had concrete behavior to review across roles and states.</p><blockquote class="closing-quote">A booking card, its timeline, and its available actions should tell the same story.</blockquote><a class="button" href="../">Back to all work <span>↗</span></a></div>
     </section>
     
   </main>
