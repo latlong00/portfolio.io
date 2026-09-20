@@ -374,3 +374,12 @@ footer{align-items:center;gap:20px}.footer-contact{display:flex;align-items:cent
 .nuzzly-visual-direction .nuzzly-palette b{color:white}
 @media(max-width:800px){.nuzzly-hero-art{grid-template-columns:1fr}.nuzzly-journey-art{min-height:150px}.nuzzly-visual-direction .nuzzly-color-story{grid-template-columns:1fr}}
 @media(max-width:600px){.case-study .nuzzly-iron-hero{padding:35px 20px 45px}.case-study .nuzzly-iron-hero>.eyebrow{margin-top:48px}.case-study .nuzzly-iron-hero h1{margin:52px 0 26px}.case-study .nuzzly-iron-hero .case-meta{margin:35px 0}.nuzzly-hero-art{padding:18px}.nuzzly-journey-art,.nuzzly-challenge-art{padding:23px}.nuzzly-desktop-proof{padding:9px}.nuzzly-desktop-proof figcaption{display:block}.nuzzly-desktop-proof figcaption span{display:block;margin-top:5px}}
+
+/* Restore the original desktop-and-phone Nuzzly mockup in the editorial header. */
+.case-study .nuzzly-iron-hero .nuzzly-restored-mockup{display:grid;grid-template-columns:minmax(0,1fr) 22%;align-items:center;gap:30px;min-height:500px;padding:45px 8% 55px;background:#eb9c89}
+.nuzzly-restored-mockup .home-browser{min-width:0;max-width:none}
+.nuzzly-restored-mockup .home-phone{position:relative;right:auto;bottom:auto;width:100%;max-height:440px}
+.nuzzly-restored-mockup .home-phone img{max-height:430px;object-fit:contain}
+.nuzzly-restored-mockup .showcase-caption{bottom:14px;left:8%}
+@media(max-width:800px){.case-study .nuzzly-iron-hero .nuzzly-restored-mockup{min-height:0;padding:32px 5% 48px;gap:16px;grid-template-columns:minmax(0,1fr) 25%}}
+@media(max-width:600px){.case-study .nuzzly-iron-hero .nuzzly-restored-mockup{padding:24px 17px 46px;grid-template-columns:minmax(0,1fr) 28%;gap:9px}.nuzzly-restored-mockup .home-phone{border-width:4px;border-radius:14px}.nuzzly-restored-mockup .showcase-caption{left:17px;font-size:8px}}
