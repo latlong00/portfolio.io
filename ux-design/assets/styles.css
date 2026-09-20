@@ -383,3 +383,12 @@ footer{align-items:center;gap:20px}.footer-contact{display:flex;align-items:cent
 .nuzzly-restored-mockup .showcase-caption{bottom:14px;left:8%}
 @media(max-width:800px){.case-study .nuzzly-iron-hero .nuzzly-restored-mockup{min-height:0;padding:32px 5% 48px;gap:16px;grid-template-columns:minmax(0,1fr) 25%}}
 @media(max-width:600px){.case-study .nuzzly-iron-hero .nuzzly-restored-mockup{padding:24px 17px 46px;grid-template-columns:minmax(0,1fr) 28%;gap:9px}.nuzzly-restored-mockup .home-phone{border-width:4px;border-radius:14px}.nuzzly-restored-mockup .showcase-caption{left:17px;font-size:8px}}
+
+/* Keep the restored mockup prominent without extending the opening unnecessarily. */
+@media(min-width:601px){
+.case-study .nuzzly-iron-hero{padding-top:48px;padding-bottom:48px}
+.case-study .nuzzly-iron-hero>.eyebrow{margin-top:40px}
+.case-study .nuzzly-iron-hero h1{margin:50px 0 28px}
+.case-study .nuzzly-iron-hero .case-meta{margin:36px 0 34px}
+.case-study .nuzzly-iron-hero .nuzzly-restored-mockup{min-height:0}
+}
