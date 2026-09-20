@@ -319,3 +319,27 @@ footer{align-items:center;gap:20px}.footer-contact{display:flex;align-items:cent
 .nuzzly-hero-bottom{margin-top:26px}
 .case-study .nuzzly-hero-bottom .case-meta{margin:0}
 }
+
+/* Nuzzly: restore visual rationale and system-level decisions from the source case study. */
+.nuzzly-visual-direction{padding:72px max(36px,calc((100vw - 1160px)/2));background:#f4eee5;border-top:1px solid var(--line)}
+.nuzzly-visual-intro{max-width:760px}
+.nuzzly-visual-intro h2,.nuzzly-systems-heading h2{font:400 clamp(40px,4.7vw,62px)/1 "Newsreader",serif;margin:14px 0 18px}
+.nuzzly-visual-intro>p:last-child,.nuzzly-systems-heading>p:last-child{max-width:720px;color:var(--muted);font-size:17px;line-height:1.6}
+.nuzzly-color-story{display:grid;grid-template-columns:1fr 1fr;gap:50px;margin-top:43px;padding-top:35px;border-top:1px solid var(--line)}
+.nuzzly-color-story h3{font:400 34px/1.1 "Newsreader",serif;margin:12px 0}
+.nuzzly-color-story p:last-child{color:var(--muted);font-size:15px;line-height:1.6;max-width:580px}
+.nuzzly-palette{display:grid;grid-template-columns:repeat(4,1fr);gap:9px;align-self:end}
+.nuzzly-palette>div{min-width:0}
+.nuzzly-palette span{display:block;height:70px;border:1px solid #d5d1ca}
+.nuzzly-palette small{display:block;font-size:10px;line-height:1.45;margin-top:9px;color:var(--muted)}
+.nuzzly-palette b{color:var(--ink)}
+.nuzzly-dashboard-decisions,.nuzzly-systems-grid{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:1px;background:var(--line);border:1px solid var(--line);margin-top:52px}
+.nuzzly-dashboard-decisions article,.nuzzly-systems-grid article{background:var(--paper);padding:24px;min-width:0}
+.nuzzly-dashboard-decisions span,.nuzzly-systems-grid span{font-size:10px;color:var(--coral-dark);letter-spacing:.09em}
+.nuzzly-dashboard-decisions h3,.nuzzly-systems-grid h3{font:400 25px/1.1 "Newsreader",serif;margin:22px 0 10px}
+.nuzzly-dashboard-decisions p,.nuzzly-systems-grid p{font-size:13px;line-height:1.5;color:var(--muted)}
+.nuzzly-systems{padding:76px max(36px,calc((100vw - 1160px)/2));background:#edf3ef}
+.nuzzly-systems-grid{border-color:#b9c9c0;background:#b9c9c0}
+.nuzzly-systems-grid article{background:#f8fbf8}
+@media(max-width:850px){.nuzzly-color-story{grid-template-columns:1fr;gap:22px}.nuzzly-dashboard-decisions,.nuzzly-systems-grid{grid-template-columns:repeat(2,minmax(0,1fr))}}
+@media(max-width:600px){.nuzzly-visual-direction,.nuzzly-systems{padding:52px 20px}.nuzzly-palette{grid-template-columns:repeat(2,1fr)}.nuzzly-dashboard-decisions,.nuzzly-systems-grid{grid-template-columns:1fr}.nuzzly-color-story{margin-top:28px}}
