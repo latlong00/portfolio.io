@@ -143,3 +143,13 @@ footer{align-items:center;gap:20px}.footer-contact{display:flex;align-items:cent
 .im-decision-grid p{font-size:14px;line-height:1.55;color:#526157;margin:0}
 .im-decision-map figcaption{padding:15px 32px;border-top:1px solid #b9c9bf;font-size:11px;color:#66756b}
 @media(max-width:700px){.im-decision-map-head{display:block;padding:21px 23px}.im-decision-map-head strong{display:block;margin-top:10px}.im-decision-grid{grid-template-columns:1fr}.im-decision-grid>div{padding:24px}.im-decision-grid>div+div{border-left:0;border-top:1px solid #b9c9bf}.im-decision-icon{margin:18px 0;width:52px;height:52px}.im-decision-map figcaption{padding:16px 23px}}
+
+/* Nuzzly case study: surface the three comparisons sooner. */
+.nuzzly-story-nav{display:flex;gap:10px;flex-wrap:wrap;margin:20px 0 34px}
+.nuzzly-story-nav a{border:1px solid var(--line);padding:10px 15px;font-size:12px;letter-spacing:.04em}
+.nuzzly-story-nav a:hover,.nuzzly-story-nav a:focus-visible{border-color:var(--coral-dark);color:var(--coral-dark)}
+.case-study:has(.nuzzly-story-nav) .hero-showcase-home{min-height:460px;padding-top:35px;padding-bottom:35px}
+.case-study:has(.nuzzly-story-nav) .case-overview{padding-top:78px;padding-bottom:78px}
+.case-study:has(.nuzzly-story-nav) #discovery{padding-top:84px}
+#discovery,#booking,#dashboard{scroll-margin-top:85px}
+@media(max-width:800px){.case-study:has(.nuzzly-story-nav) .hero-showcase-home{min-height:0}.case-study:has(.nuzzly-story-nav) .case-overview{padding-top:60px;padding-bottom:60px}.nuzzly-story-nav{margin-bottom:28px}}
