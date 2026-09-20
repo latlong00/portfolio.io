@@ -5,7 +5,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <meta name="description" content="Nuzzly UX design case study by Laticia Long: marketplace discovery, messaging, booking states, dashboards, and safety.">
   <title>Nuzzly UX Design Case Study — Laticia Long</title>
-  <link rel="stylesheet" href="../assets/styles.css?v=41">
+  <link rel="stylesheet" href="../assets/styles.css?v=42">
   <script defer src="../assets/site.js?v=4"></script>
 </head>
 <body id="top">
@@ -21,6 +21,7 @@
       <p class="eyebrow coral">UX DESIGN · UX RESEARCH · UX WRITING · QA</p>
       <h1>Nuzzly</h1>
       <p class="case-dek">Making pet care easier to discover, book, and manage.</p><a class="live-site-link" href="https://nuzzly.us/" target="_blank" rel="noopener noreferrer" aria-label="Visit the live Nuzzly site (opens in a new tab)">Visit live Nuzzly site <span aria-hidden="true">↗</span></a>
+      <nav class="nuzzly-story-nav" aria-label="Jump to case study stories"><a href="#discovery">01 Discovery ↓</a><a href="#booking">02 Booking ↓</a><a href="#dashboard">03 Dashboard ↓</a></nav>
       <div class="case-meta">
         <dl><dt>My role</dt><dd>UX design, UX writing, product QA</dd></dl>
         <dl><dt>Timeline</dt><dd>September 2025—August 2026</dd></dl>
@@ -36,7 +37,7 @@
     <section class="case-overview split-section">
       <p class="section-index">OVERVIEW</p>
       <div>
-        <h2>A two-sided marketplace can’t work when users don’t know what state they’re in.</h2>
+        <h2>Three journeys where clearer design builds trust.</h2>
         <p>Nuzzly connects pet owners with sitters. I tested complete journeys across discovery, applications, booking, messaging, support, and listing management. The main problem wasn’t one isolated screen: the experience communicated different rules in different places.</p>
         <p>I mapped the breakdowns, redesigned the highest-risk flows, and paired interaction changes with language that accurately reflected system behavior.</p>
         <div class="challenge-grid">
@@ -47,7 +48,7 @@
       </div>
     </section>
 
-    <section class="case-section">
+    <section class="case-section" id="discovery">
       <header class="section-heading"><span>01</span><div><p>EXPLORE + DISCOVERY</p><h2>Make the user’s goal visible before showing the inventory.</h2></div></header>
       <div class="section-copy"><p>The original Explore experience mixed search modes, location filters, and saved-item behavior. Before users could evaluate a listing, they first had to interpret how the page worked.</p><p>I reorganized the experience around the primary task—<strong>Find a sit</strong>—then clarified filter labels, separated view controls from saved items, and strengthened the information hierarchy of each result.</p></div>
       <div class="comparison">
@@ -58,7 +59,7 @@
       <div class="nested-story filter-story"><div><p class="eyebrow coral">SITTER FILTERS</p><h3>Keep applied criteria visible and easy to revise.</h3><p>Filters appeared after search without a compact summary, removable selections, or a clear reset action. The redesign uses chips, <strong>Filters 2</strong>, <strong>Clear all</strong>, result count, and sorting so the current search state never disappears.</p></div><div class="comparison"><figure><span>BEFORE · UNCLEAR FILTER STATE</span><img src="https://laticia-nuzzly-case-study.yanhong-long.chatgpt.site/assets/explore-filters-coral-clean.png" alt="Original Nuzzly sitter results and filter controls"></figure><figure class="after"><span>AFTER · VISIBLE APPLIED STATE</span><img src="https://laticia-nuzzly-case-study.yanhong-long.chatgpt.site/assets/explore-filters-after-coral.png" alt="Redesigned Nuzzly sitter search with removable filters and result count"></figure></div></div>
     </section>
 
-    <section class="case-section alt-section">
+    <section class="case-section alt-section" id="booking">
       <header class="section-heading"><span>02</span><div><p>MESSAGING + BOOKING STATES</p><h2>Design one source of truth for a changing transaction.</h2></div></header>
       <div class="section-copy"><p>After an owner accepted a sitter, the interface could display <strong>Booking Confirmed</strong> while the timeline said the sitter had declined. Stale buttons remained available, so the next step was unclear.</p><p>I redesigned the card as a state-based component: the status, explanation, and action change together. A declined invitation removes invalid booking controls and leads the owner toward finding another sitter.</p></div>
       <div class="comparison">
@@ -73,7 +74,7 @@
       </div>
     </section>
 
-    <section class="case-section">
+    <section class="case-section" id="dashboard">
       <header class="section-heading"><span>03</span><div><p>DASHBOARD + LISTING MANAGEMENT</p><h2>Show what users can do now—and what becomes available later.</h2></div></header>
       <div class="section-copy"><p>The dashboard mixed applications, active sits, support, and messaging without explaining when private contact details were shared. Some actions appeared twice, while important state boundaries were invisible.</p><p>I treated the dashboard as an operational workspace: one primary action per intent, clearer tabs, visible confirmation status, and transparent rules for contact sharing and emergency support.</p></div>
       <div class="dashboard-comparison">
