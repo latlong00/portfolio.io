@@ -420,3 +420,8 @@ footer{align-items:center;gap:20px}.footer-contact{display:flex;align-items:cent
 /* Keep the live product easy to find in the case-study details. */
 .nuzzly-iron-hero .nuzzly-meta-link{display:inline-flex;align-items:center;gap:9px;color:var(--coral-dark);font-weight:700;border-bottom:1px solid currentColor;padding-bottom:3px}
 .nuzzly-iron-hero .nuzzly-meta-link:hover,.nuzzly-iron-hero .nuzzly-meta-link:focus-visible{color:var(--ink)}
+
+/* Restore the mockup's balanced padding after moving its action to metadata. */
+.case-study .nuzzly-iron-hero .nuzzly-restored-mockup{padding-top:45px}
+@media(max-width:800px){.case-study .nuzzly-iron-hero .nuzzly-restored-mockup{padding-top:32px}}
+@media(max-width:600px){.case-study .nuzzly-iron-hero .nuzzly-restored-mockup{padding-top:24px}}
