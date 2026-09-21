@@ -460,3 +460,9 @@ footer{align-items:center;gap:20px}.footer-contact{display:flex;align-items:cent
 .case-study:has(.nuzzly-story-nav) .case-hero.nuzzly-iron-hero h1{font-size:clamp(80px,12vw,170px);line-height:.8}
 @media(max-width:800px){.case-study:has(.nuzzly-story-nav) .case-hero.nuzzly-iron-hero h1{font-size:78px}}
 @media(max-width:480px){.case-study:has(.nuzzly-story-nav) .case-hero.nuzzly-iron-hero h1{font-size:68px}}
+
+/* Open up the Nuzzly title-to-description transition and use Iron Mountain's two-line measure. */
+.case-study:has(.nuzzly-story-nav) .case-hero.nuzzly-iron-hero h1{font-size:clamp(80px,12vw,170px);margin-bottom:74px}
+.case-study .nuzzly-iron-hero .case-dek{max-width:1120px;font-size:clamp(28px,3.2vw,43px);line-height:1.14}
+@media(max-width:800px){.case-study:has(.nuzzly-story-nav) .case-hero.nuzzly-iron-hero h1{font-size:78px;margin-bottom:34px}.case-study .nuzzly-iron-hero .case-dek{max-width:100%}}
+@media(max-width:480px){.case-study:has(.nuzzly-story-nav) .case-hero.nuzzly-iron-hero h1{font-size:68px;margin-bottom:26px}}
