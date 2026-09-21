@@ -392,3 +392,8 @@ footer{align-items:center;gap:20px}.footer-contact{display:flex;align-items:cent
 .case-study .nuzzly-iron-hero .case-meta{margin:36px 0 34px}
 .case-study .nuzzly-iron-hero .nuzzly-restored-mockup{min-height:0}
 }
+
+.nuzzly-work-note{display:grid;grid-template-columns:125px minmax(0,1fr);gap:25px;align-items:start;max-width:1050px;padding:25px 0 4px}
+.nuzzly-work-note span{font-size:11px;letter-spacing:.12em;color:var(--coral-dark);padding-top:5px}
+.nuzzly-work-note p{font:400 clamp(22px,2.3vw,31px)/1.18 "Newsreader",serif;margin:0}
+@media(max-width:600px){.nuzzly-work-note{grid-template-columns:1fr;gap:8px;padding-top:22px}}
