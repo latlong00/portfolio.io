@@ -107,3 +107,19 @@ footer{align-items:center;gap:20px}.footer-contact{display:flex;align-items:cent
 
 /* Prominent route to the live Nuzzly product. */
 .live-site-link{display:inline-flex;align-items:center;justify-content:space-between;gap:30px;margin:14px 0 2px;padding:15px 19px;background:var(--coral);color:#fff;font-size:13px;font-weight:600}.live-site-link:hover{background:#ae4636;opacity:1}
+
+/* Nuzzly writing case study: the hero previews a content decision, not repeated screens. */
+.writing-banner-nuzzly.writing-copy-banner{display:grid;grid-template-columns:minmax(0,.83fr) minmax(0,1.17fr);gap:clamp(24px,5vw,70px);align-items:center;min-height:355px;padding:clamp(28px,5vw,66px);background:#21312d;color:#f9f6ef}
+.writing-copy-banner .copy-banner-intro>span,.writing-copy-banner .copy-banner-row>span{display:block;font-size:10px;letter-spacing:.15em;font-weight:600}
+.writing-copy-banner .copy-banner-intro>span{color:#efa692}
+.writing-copy-banner .copy-banner-intro h2{font:400 clamp(34px,3.5vw,50px)/1.03 "Newsreader",serif;letter-spacing:-.03em;margin:30px 0 20px;max-width:450px}
+.writing-copy-banner .copy-banner-intro p{color:#d6dfd9;font-size:15px;line-height:1.55;max-width:440px;margin:0}
+.writing-copy-banner .copy-banner-example{background:#fcf9f3;color:#1d2722;padding:clamp(24px,3vw,42px);box-shadow:14px 14px 0 rgba(241,157,137,.22)}
+.writing-copy-banner .copy-banner-row{padding:0 0 23px;border-bottom:1px solid #d1d8d2}
+.writing-copy-banner .copy-banner-row>span{color:#7c847e;margin-bottom:15px}
+.writing-copy-banner .copy-banner-row s{font:400 clamp(26px,2.6vw,36px)/1.1 "Newsreader",serif;color:#6e756f;text-decoration-color:#c45d4c;text-decoration-thickness:2px}
+.writing-copy-banner .copy-banner-after{padding:24px 0 0;border:0}
+.writing-copy-banner .copy-banner-after>span{color:#a23e31}
+.writing-copy-banner .copy-banner-after strong{display:block;font:400 clamp(29px,3vw,42px)/1.08 "Newsreader",serif;color:#923b30}
+.writing-copy-banner .copy-banner-example>p{font-size:13px;line-height:1.5;color:#637069;margin:27px 0 0}
+@media(max-width:760px){.writing-banner-nuzzly.writing-copy-banner{grid-template-columns:1fr;padding:30px 24px;gap:32px;min-height:0}.writing-copy-banner .copy-banner-intro h2{margin:19px 0 14px}.writing-copy-banner .copy-banner-example{box-shadow:8px 8px 0 rgba(241,157,137,.22)}}
