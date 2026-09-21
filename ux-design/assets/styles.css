@@ -455,3 +455,8 @@ footer{align-items:center;gap:20px}.footer-contact{display:flex;align-items:cent
 @media(max-width:480px){
 .case-study .nuzzly-iron-hero h1{font-size:68px}
 }
+
+/* Override the older :has() Nuzzly title rule that kept the previous scale. */
+.case-study:has(.nuzzly-story-nav) .case-hero.nuzzly-iron-hero h1{font-size:clamp(80px,12vw,170px);line-height:.8}
+@media(max-width:800px){.case-study:has(.nuzzly-story-nav) .case-hero.nuzzly-iron-hero h1{font-size:78px}}
+@media(max-width:480px){.case-study:has(.nuzzly-story-nav) .case-hero.nuzzly-iron-hero h1{font-size:68px}}
