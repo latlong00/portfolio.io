@@ -123,3 +123,9 @@ footer{align-items:center;gap:20px}.footer-contact{display:flex;align-items:cent
 .writing-copy-banner .copy-banner-after strong{display:block;font:400 clamp(29px,3vw,42px)/1.08 "Newsreader",serif;color:#923b30}
 .writing-copy-banner .copy-banner-example>p{font-size:13px;line-height:1.5;color:#637069;margin:27px 0 0}
 @media(max-width:760px){.writing-banner-nuzzly.writing-copy-banner{grid-template-columns:1fr;padding:30px 24px;gap:32px;min-height:0}.writing-copy-banner .copy-banner-intro h2{margin:19px 0 14px}.writing-copy-banner .copy-banner-example{box-shadow:8px 8px 0 rgba(241,157,137,.22)}}
+
+/* Follow the Nuzzly hero with evidence and a distinct release check. */
+.state-qa-note{display:grid;grid-template-columns:180px 1fr;gap:35px;align-items:start;border-top:1px solid var(--line);padding:27px 0 0;margin-top:34px}
+.state-qa-note>span{font-size:10px;letter-spacing:.14em;color:#a6372c;font-weight:600}
+.state-qa-note p{margin:0;max-width:760px;font-size:18px;line-height:1.55}
+@media(max-width:760px){.state-qa-note{grid-template-columns:1fr;gap:12px}}
