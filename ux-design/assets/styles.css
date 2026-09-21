@@ -410,3 +410,9 @@ footer{align-items:center;gap:20px}.footer-contact{display:flex;align-items:cent
 .case-study .nuzzly-restored-mockup .live-site-link{position:absolute;right:8%;bottom:10px;margin:0;padding:11px 15px;font-size:12px;gap:18px;z-index:2}
 .nuzzly-overview .nuzzly-story-nav{margin:32px 0 0;padding-top:23px;border-top:1px solid var(--line)}
 @media(max-width:600px){.case-study .nuzzly-restored-mockup .live-site-link{right:17px;bottom:8px;padding:8px 10px;font-size:10px;gap:7px}.nuzzly-restored-mockup .showcase-caption{display:none}}
+
+/* Put the live product action at the first glance of the mockup. */
+.case-study .nuzzly-iron-hero .nuzzly-restored-mockup{padding-top:85px}
+.case-study .nuzzly-restored-mockup .live-site-link{top:17px;right:8%;bottom:auto;padding:14px 20px;font-size:14px;gap:28px;box-shadow:0 4px 0 rgba(77,30,22,.16)}
+@media(max-width:800px){.case-study .nuzzly-iron-hero .nuzzly-restored-mockup{padding-top:77px}}
+@media(max-width:600px){.case-study .nuzzly-iron-hero .nuzzly-restored-mockup{padding-top:69px}.case-study .nuzzly-restored-mockup .live-site-link{top:12px;right:17px;bottom:auto;padding:10px 13px;font-size:11px;gap:14px}}
