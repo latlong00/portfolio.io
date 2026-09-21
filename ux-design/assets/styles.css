@@ -405,3 +405,8 @@ footer{align-items:center;gap:20px}.footer-contact{display:flex;align-items:cent
 .case-study .nuzzly-iron-hero .nuzzly-story-nav{margin:36px 0 0}
 .nuzzly-overview .nuzzly-overview-lead{font:400 clamp(25px,2.6vw,35px)/1.22 "Newsreader",serif;max-width:830px;margin:0 0 22px;color:var(--ink)}
 @media(max-width:600px){.case-study .nuzzly-iron-hero .case-meta{margin:34px 0 38px}.case-study .nuzzly-iron-hero .nuzzly-story-nav{margin-top:26px}.nuzzly-overview .nuzzly-overview-lead{font-size:25px}}
+
+/* Put supporting links with the product and the story index with the overview. */
+.case-study .nuzzly-restored-mockup .live-site-link{position:absolute;right:8%;bottom:10px;margin:0;padding:11px 15px;font-size:12px;gap:18px;z-index:2}
+.nuzzly-overview .nuzzly-story-nav{margin:32px 0 0;padding-top:23px;border-top:1px solid var(--line)}
+@media(max-width:600px){.case-study .nuzzly-restored-mockup .live-site-link{right:17px;bottom:8px;padding:8px 10px;font-size:10px;gap:7px}.nuzzly-restored-mockup .showcase-caption{display:none}}
