@@ -441,14 +441,17 @@ footer{align-items:center;gap:20px}.footer-contact{display:flex;align-items:cent
 .nuzzly-overview .nuzzly-inline-link:hover,.nuzzly-overview .nuzzly-inline-link:focus-visible{color:var(--ink)}
 .nuzzly-overview .nuzzly-inline-link span{font-size:.8em;text-decoration:none}
 
-/* Match Iron Mountain's editorial title and dek proportions on Nuzzly. */
+/* Give Nuzzly the same full-scale editorial opening as Iron Mountain. */
 .case-study .nuzzly-iron-hero{padding-top:75px}
 .case-study .nuzzly-iron-hero>.eyebrow{margin-top:75px}
-.case-study .nuzzly-iron-hero h1{font-size:clamp(78px,10vw,140px);line-height:.92;margin:80px 0 32px}
-.case-study .nuzzly-iron-hero .case-dek{font-size:clamp(28px,3.2vw,43px);line-height:1.14;max-width:1030px}
-@media(max-width:760px){
-.case-study .nuzzly-iron-hero{padding-top:35px}
-.case-study .nuzzly-iron-hero>.eyebrow{margin-top:48px}
-.case-study .nuzzly-iron-hero h1{font-size:clamp(54px,13vw,90px);margin:52px 0 28px}
-.case-study .nuzzly-iron-hero .case-dek{font-size:clamp(25px,6vw,34px);max-width:100%}
+.case-study .nuzzly-iron-hero h1{font-size:clamp(80px,12vw,170px);line-height:.8;margin:80px 0 34px}
+.case-study .nuzzly-iron-hero .case-dek{font-size:clamp(28px,4vw,55px);line-height:1.05;max-width:850px}
+@media(max-width:800px){
+.case-study .nuzzly-iron-hero{padding-top:55px}
+.case-study .nuzzly-iron-hero>.eyebrow{margin-top:55px}
+.case-study .nuzzly-iron-hero h1{font-size:78px;margin:55px 0 25px}
+.case-study .nuzzly-iron-hero .case-dek{font-size:clamp(28px,5vw,40px);max-width:100%}
+}
+@media(max-width:480px){
+.case-study .nuzzly-iron-hero h1{font-size:68px}
 }
