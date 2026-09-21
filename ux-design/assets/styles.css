@@ -416,3 +416,7 @@ footer{align-items:center;gap:20px}.footer-contact{display:flex;align-items:cent
 .case-study .nuzzly-restored-mockup .live-site-link{top:17px;right:8%;bottom:auto;padding:14px 20px;font-size:14px;gap:28px;box-shadow:0 4px 0 rgba(77,30,22,.16)}
 @media(max-width:800px){.case-study .nuzzly-iron-hero .nuzzly-restored-mockup{padding-top:77px}}
 @media(max-width:600px){.case-study .nuzzly-iron-hero .nuzzly-restored-mockup{padding-top:69px}.case-study .nuzzly-restored-mockup .live-site-link{top:12px;right:17px;bottom:auto;padding:10px 13px;font-size:11px;gap:14px}}
+
+/* Keep the live product easy to find in the case-study details. */
+.nuzzly-iron-hero .nuzzly-meta-link{display:inline-flex;align-items:center;gap:9px;color:var(--coral-dark);font-weight:700;border-bottom:1px solid currentColor;padding-bottom:3px}
+.nuzzly-iron-hero .nuzzly-meta-link:hover,.nuzzly-iron-hero .nuzzly-meta-link:focus-visible{color:var(--ink)}
