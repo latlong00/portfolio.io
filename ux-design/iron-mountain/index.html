@@ -15,6 +15,10 @@
     .im-research-frame span{display:block;font-size:10px;letter-spacing:.15em;color:#b34534;margin-bottom:18px}
     .im-research-frame h3{font:400 clamp(24px,2.4vw,32px)/1.12 "Newsreader",serif;margin:0 0 13px}
     .im-research-frame p{font-size:14px;line-height:1.58;color:#625f58;margin:0}
+    .im-interview-bridge{display:grid;grid-template-columns:190px minmax(0,1fr);gap:42px;margin:44px 0;padding:38px 0;border-top:1px solid #c8c0b4;border-bottom:1px solid #c8c0b4}
+    .im-interview-bridge>span{font-size:10px;letter-spacing:.15em;color:#b34534;padding-top:7px}
+    .im-interview-bridge h3{font:400 clamp(30px,3.2vw,43px)/1.05 "Newsreader",serif;margin:0 0 17px;max-width:760px}
+    .im-interview-bridge p{font-size:16px;line-height:1.65;color:#625f58;max-width:780px;margin:0}
     .im-decision-map{margin:24px 0 10px;border:1px solid #b9c9bf;background:#eef3ee;color:#263f34}
     .im-decision-map-head{display:flex;justify-content:space-between;align-items:baseline;gap:20px;padding:25px 32px;border-bottom:1px solid #b9c9bf}
     .im-decision-map-head span,.im-decision-number{font-size:10px;letter-spacing:.15em;color:#6a746d}
@@ -26,7 +30,7 @@
     .im-decision-grid h3{font:400 clamp(24px,2.4vw,32px)/1.12 "Newsreader",serif;margin:0 0 15px}
     .im-decision-grid p{font-size:14px;line-height:1.55;color:#526157;margin:0}
     .im-decision-map figcaption{padding:15px 32px;border-top:1px solid #b9c9bf;font-size:11px;color:#66756b}
-    @media(max-width:700px){.im-research-frame{grid-template-columns:1fr}.im-research-frame article:nth-child(even){border-left:0}.im-research-frame article+article{border-top:1px solid #c8c0b4}.im-research-frame article{padding:24px}.im-decision-map-head{display:block;padding:21px 23px}.im-decision-map-head strong{display:block;margin-top:10px}.im-decision-grid{grid-template-columns:1fr}.im-decision-grid>div{padding:24px}.im-decision-grid>div+div{border-left:0;border-top:1px solid #b9c9bf}.im-decision-icon{margin:18px 0;width:52px;height:52px}.im-decision-map figcaption{padding:16px 23px}}
+    @media(max-width:700px){.im-interview-bridge{grid-template-columns:1fr;gap:12px;margin:34px 0;padding:30px 0}.im-research-frame{grid-template-columns:1fr}.im-research-frame article:nth-child(even){border-left:0}.im-research-frame article+article{border-top:1px solid #c8c0b4}.im-research-frame article{padding:24px}.im-decision-map-head{display:block;padding:21px 23px}.im-decision-map-head strong{display:block;margin-top:10px}.im-decision-grid{grid-template-columns:1fr}.im-decision-grid>div{padding:24px}.im-decision-grid>div+div{border-left:0;border-top:1px solid #b9c9bf}.im-decision-icon{margin:18px 0;width:52px;height:52px}.im-decision-map figcaption{padding:16px 23px}}
   </style>
   <script defer src="../assets/site.js?v=4"></script>
 </head>
@@ -64,9 +68,13 @@
       <div class="section-copy"><p>I focused the research on how customers could identify, inspect, and understand stored assets—and what internal teams would need to present those assets online. I conducted stakeholder interviews, generative research, competitor analysis, and technical exploration.</p><p>I brought early visual references into conversations with product managers, designers, and engineers, then organized what I learned into recurring experience needs. Those themes became criteria for the gallery rather than a list of disconnected feature ideas.</p></div>
       <div class="im-research-frame" aria-label="Iron Mountain research framework">
         <article><span>01 · RESEARCH GOAL</span><h3>Move beyond a static record.</h3><p>Understand what people need to recognize, inspect, and make sense of an asset online.</p></article>
-        <article><span>02 · METHODS</span><h3>Learn across product and implementation.</h3><p>Stakeholder interviews, generative research, competitor analysis, technical exploration, and iterative concept feedback.</p></article>
+        <article><span>02 · METHODS</span><h3>Interview across disciplines.</h3><p>Stakeholder interviews with product managers, designers, and engineers, supported by generative research, competitor analysis, technical exploration, and iterative concept feedback.</p></article>
         <article><span>03 · SYNTHESIZED NEEDS</span><h3>Keep the object, its context, and the path forward connected.</h3><p>An asset needed more visual detail than a record alone, identifying information during inspection, and a clear way to continue through the collection.</p></article>
         <article><span>04 · DESIGN RESPONSE</span><h3>Turn findings into an explorable gallery.</h3><p>An interactive 3D viewer, adjacent asset information, and collection navigation translated those needs into a testable experience.</p></article>
+      </div>
+      <div class="im-interview-bridge">
+        <span>STAKEHOLDER INTERVIEWS</span>
+        <div><h3>Use cross-functional conversations to make the opportunity concrete.</h3><p>I spoke with product managers, designers, and engineers about the gallery concept from both an experience and implementation perspective. Early visual references gave us something specific to react to: which asset information should remain visible during inspection, how someone could continue through a collection, and how an interactive 3D model could be presented on the web. I grouped the recurring needs from those conversations into the three design questions below.</p></div>
       </div>
       <figure class="im-decision-map">
         <div class="im-decision-map-head"><span>RESEARCH → DESIGN</span><strong>Three questions shaped the gallery</strong></div>
