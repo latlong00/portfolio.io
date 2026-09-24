@@ -6,6 +6,16 @@
   <meta name="description" content="Nuzzly UX design case study by Laticia Long: marketplace discovery, messaging, booking states, dashboards, and safety.">
   <title>Nuzzly UX Design Case Study — Laticia Long</title>
   <link rel="stylesheet" href="../assets/styles.css?v=70">
+  <style>
+    .nuzzly-research-bridge{padding-top:54px;padding-bottom:54px}
+    .nuzzly-research-bridge>div>p{max-width:820px}
+    .nuzzly-research-takeaways{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));margin-top:30px;border:1px solid #c8c0b4}
+    .nuzzly-research-takeaways article{padding:24px 26px;min-width:0}
+    .nuzzly-research-takeaways article+article{border-left:1px solid #c8c0b4}
+    .nuzzly-research-takeaways span{display:block;margin-bottom:12px;font-size:10px;letter-spacing:.14em;color:#b34534}
+    .nuzzly-research-takeaways p{margin:0;font-size:14px;line-height:1.55;color:#625f58}
+    @media(max-width:700px){.nuzzly-research-bridge{padding-top:40px;padding-bottom:40px}.nuzzly-research-takeaways{grid-template-columns:1fr}.nuzzly-research-takeaways article+article{border-left:0;border-top:1px solid #c8c0b4}}
+  </style>
   <script defer src="../assets/site.js?v=4"></script>
 </head>
 <body id="top">
@@ -53,7 +63,21 @@
       </div>
     </section>
 
-        <section class="nuzzly-visual-direction" aria-labelledby="visual-direction-title">
+        <section class="split-section nuzzly-research-bridge" aria-labelledby="competitive-research-title">
+      <p class="section-index">RESEARCH</p>
+      <div>
+        <p class="eyebrow coral">COMPETITIVE ANALYSIS</p>
+        <h2 id="competitive-research-title">Learn how established marketplaces support trust.</h2>
+        <p>I reviewed Rover, TrustedHousesitters, and Workaway to compare how different two-sided marketplaces guide people from discovery to commitment. I examined search and filtering, profile context, verification cues, messaging, and booking or confirmation states. These patterns helped me form hypotheses; Nuzzly’s product review, QA findings, analytics, and session evidence determined which issues to prioritize.</p>
+        <div class="nuzzly-research-takeaways" aria-label="Competitive research takeaways">
+          <article><span>DISCOVERY</span><p>Surface trust signals and enough context while people compare options.</p></article>
+          <article><span>COMMITMENT</span><p>Explain expectations and status before users take consequential actions.</p></article>
+          <article><span>CONSISTENCY</span><p>Keep applications, messages, and booking states aligned across the journey.</p></article>
+        </div>
+      </div>
+    </section>
+
+    <section class="nuzzly-visual-direction" aria-labelledby="visual-direction-title">
       <div class="nuzzly-visual-intro">
         <p class="eyebrow coral">WEB + RESPONSIVE EXPERIENCE</p>
         <h2 id="visual-direction-title">Designing the marketplace beyond mobile-sized screens.</h2>
